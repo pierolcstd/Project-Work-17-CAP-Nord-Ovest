@@ -475,7 +475,7 @@ body {
 /* ----- Trend badge (kpi.html) ----- */
 .trend-up     { color: #66bb6a; font-size: 0.9em; font-weight: bold; }
 .trend-down   { color: #ef9a9a; font-size: 0.9em; font-weight: bold; }
-.trend-stable { color: #fff59d; font-size: 0.9em; font-weight: bold; }
+.trend-stable { color: #c59211; font-size: 0.9em; font-weight: bold; }
 
 /* ----- Grafici ESG – griglia ----- */
 .charts-grid {
