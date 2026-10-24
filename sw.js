@@ -1,5 +1,5 @@
 // Nome versionato: incrementarlo quando cambiano le regole o gli asset da gestire.
-var CACHE_NAME = 'cap-nord-static-v1';
+var CACHE_NAME = 'cap-nord-static-v2';
 
 // Durata massima della cache: ogni risorsa viene considerata scaduta dopo 30 giorni.
 var CACHE_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
