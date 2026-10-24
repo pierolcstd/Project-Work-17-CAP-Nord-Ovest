@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi siamo - CAP Nord Ovest</title>
+    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
+    <link rel="preload" as="image" href="img/filiera.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,7 +36,8 @@
 
     <!-- HERO con immagine filiera -->
     <section class="hero-img">
-        <img src="img/filiera.jpg" alt="">
+        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
+        <img src="img/filiera.jpg" alt="" fetchpriority="high" decoding="async">
         <h2>Chi siamo</h2>
         <p>CAP Nord Ovest – parte del sistema Consorzi Agrari d'Italia</p>
     </section>

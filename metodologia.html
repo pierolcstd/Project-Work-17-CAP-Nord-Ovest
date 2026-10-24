@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metodologia - CAP Nord Ovest</title>
+    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
+    <link rel="preload" as="image" href="img/agricoltura.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -33,7 +35,8 @@
     </header>
 
     <section class="hero-img">
-        <img src="img/agricoltura.jpg" alt="">
+        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
+        <img src="img/agricoltura.jpg" alt="" fetchpriority="high" decoding="async">
         <h2>Metodologia</h2>
         <p>Come è stato costruito questo Project Work</p>
     </section>

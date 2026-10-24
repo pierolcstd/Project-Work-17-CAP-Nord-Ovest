@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KPI ESG - CAP Nord Ovest</title>
+    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
+    <link rel="preload" as="image" href="img/agricoltura.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,7 +36,8 @@
 
     <!-- HERO con immagine di sfondo -->
     <section class="hero-img">
-        <img src="img/agricoltura.jpg" alt="">
+        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
+        <img src="img/agricoltura.jpg" alt="" fetchpriority="high" decoding="async">
         <h2>KPI ESG</h2>
         <p>Indicatori chiave di performance ambientale, sociale e di governance – esercizio 2023</p>
     </section>
@@ -68,18 +71,23 @@
     </section>
 
     <!-- GRAFICI ESG -->
+    <!-- section raggruppa la panoramica grafica; i valori restano leggibili anche come testo nei singoli grafici. -->
     <section class="section green">
         <h2>📊 Grafici ESG – Visualizzazione rapida</h2>
         <p>I principali indicatori ESG in forma grafica, ottimizzati per la lettura su smartphone.</p>
+        <!-- La griglia CSS adatta automaticamente il numero di schede alla larghezza disponibile. -->
         <div class="charts-grid">
 
             <!-- 1. Composizione di genere -->
+            <!-- Grafico ad anello: conic-gradient disegna le due percentuali senza immagini o librerie esterne. -->
             <div class="chart-card">
                 <h3>Composizione di genere (2023)</h3>
                 <div class="donut-wrap">
+                    <!-- Gli intervalli 0-71% e 71-100% rappresentano i segmenti; il foro interno mostra il totale. -->
                     <div class="donut" style="background: conic-gradient(#2e7d32 0% 71%, #a5d6a7 71% 100%);">
                         <div class="donut-hole"><span>107</span><small>dip.</small></div>
                     </div>
+                    <!-- La legenda testuale esplicita colori, percentuali e conteggi. -->
                     <div class="chart-legend">
                         <div class="leg-row"><span class="leg-dot" style="background:#2e7d32"></span><span>Uomini &nbsp;<strong>71%</strong> (76)</span></div>
                         <div class="leg-row"><span class="leg-dot" style="background:#a5d6a7"></span><span>Donne &nbsp;<strong>29%</strong> (31)</span></div>
@@ -88,6 +96,7 @@
             </div>
 
             <!-- 2. Fasce d'età -->
+            <!-- Nei grafici a barre la larghezza inline codifica il valore percentuale. -->
             <div class="chart-card">
                 <h3>Fasce d'età del personale</h3>
                 <div class="bar-chart">
@@ -107,6 +116,7 @@
             </div>
 
             <!-- 3. Distribuzione regionale -->
+            <!-- Le etichette e i valori testuali affiancano le barre, che sono una rappresentazione visiva. -->
             <div class="chart-card">
                 <h3>Distribuzione regionale</h3>
                 <div class="bar-chart">
@@ -126,6 +136,7 @@
             </div>
 
             <!-- 4. Ore di formazione -->
+            <!-- La larghezza è relativa al valore massimo del gruppo (414 ore = 100%). -->
             <div class="chart-card">
                 <h3>Ore di formazione 2023</h3>
                 <div class="bar-chart">
@@ -145,6 +156,7 @@
             </div>
 
             <!-- 5. Rifiuti per tipologia (top 4) -->
+            <!-- La larghezza confronta le quantità; le classi cromatiche distinguono le serie e i rifiuti pericolosi. -->
             <div class="chart-card">
                 <h3>Rifiuti principali 2023 (tonnellate)</h3>
                 <div class="bar-chart">
@@ -172,6 +184,7 @@
             </div>
 
             <!-- 6. Investimento formazione 2022 vs 2023 -->
+            <!-- Barre comparative: entrambe usano la stessa scala relativa per confrontare i due anni. -->
             <div class="chart-card">
                 <h3>Investimento formazione (€)</h3>
                 <div class="compare-row">

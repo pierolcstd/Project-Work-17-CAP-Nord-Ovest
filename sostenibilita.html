@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sostenibilità - CAP Nord Ovest</title>
+    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
+    <link rel="preload" as="image" href="img/sostenibilita.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,7 +36,8 @@
 
     <!-- HERO con immagine -->
     <section class="hero-img">
-        <img src="img/sostenibilita.jpg" alt="">
+        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
+        <img src="img/sostenibilita.jpg" alt="" fetchpriority="high" decoding="async">
         <h2>Sostenibilità d'Impresa</h2>
         <p>Ambiente, Persone e Governance al centro delle nostre scelte</p>
     </section>
