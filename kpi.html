@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sito web di analisi della sostenibilità d'impresa di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia, basata sul Bilancio di Sostenibilità 2024.">
     <title>KPI ESG - CAP Nord Ovest</title>
-    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
-    <link rel="preload" as="image" href="img/agricoltura.jpg" fetchpriority="high">
+    <!-- Precarica l'immagine hero, elemento visivo principale della pagina. -->
+    <link rel="preload" as="image" href="img/cap-kpi.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,15 +35,15 @@
         </nav>
     </header>
 
-    <!-- HERO con immagine di sfondo -->
+    <!-- Hero KPI: dashboard di grafici e indicatori di performance. -->
     <section class="hero-img">
-        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
-        <img src="img/agricoltura.jpg" alt="" fetchpriority="high" decoding="async">
+        <!-- L'immagine hero ha priorità alta per favorire il caricamento dell'LCP. -->
+        <img src="img/cap-kpi.jpg" alt="Dashboard digitale con grafici e indicatori di performance" fetchpriority="high" decoding="async">
         <h2>KPI ESG</h2>
         <p>Indicatori chiave di performance ambientale, sociale e di governance – esercizio 2023</p>
     </section>
     <div class="divider-green"></div>
-    <!-- PANORAMICA -->
+    <!-- Indicatori di sintesi del Bilancio di Sostenibilità 2024. -->
     <section class="section">
         <h2>Panoramica generale</h2>
         <p>
@@ -70,24 +71,23 @@
         </div>
     </section>
 
-    <!-- GRAFICI ESG -->
-    <!-- section raggruppa la panoramica grafica; i valori restano leggibili anche come testo nei singoli grafici. -->
+    <!-- Grafici ESG: ogni rappresentazione visuale è accompagnata dai valori testuali. -->
     <section class="section green">
         <h2>📊 Grafici ESG – Visualizzazione rapida</h2>
         <p>I principali indicatori ESG in forma grafica, ottimizzati per la lettura su smartphone.</p>
-        <!-- La griglia CSS adatta automaticamente il numero di schede alla larghezza disponibile. -->
+        <!-- La griglia CSS adatta le schede alla larghezza disponibile. -->
         <div class="charts-grid">
 
-            <!-- 1. Composizione di genere -->
-            <!-- Grafico ad anello: conic-gradient disegna le due percentuali senza immagini o librerie esterne. -->
+            <!-- Grafico: composizione di genere del personale. -->
+            <!-- Il gradiente conico disegna le percentuali senza immagini o librerie esterne. -->
             <div class="chart-card">
                 <h3>Composizione di genere (2023)</h3>
                 <div class="donut-wrap">
-                    <!-- Gli intervalli 0-71% e 71-100% rappresentano i segmenti; il foro interno mostra il totale. -->
+                    <!-- Gli intervalli del gradiente rappresentano le quote; il centro mostra il totale. -->
                     <div class="donut" style="background: conic-gradient(#2e7d32 0% 71%, #a5d6a7 71% 100%);">
                         <div class="donut-hole"><span>107</span><small>dip.</small></div>
                     </div>
-                    <!-- La legenda testuale esplicita colori, percentuali e conteggi. -->
+                    <!-- La legenda riporta colori, percentuali e conteggi in forma testuale. -->
                     <div class="chart-legend">
                         <div class="leg-row"><span class="leg-dot" style="background:#2e7d32"></span><span>Uomini &nbsp;<strong>71%</strong> (76)</span></div>
                         <div class="leg-row"><span class="leg-dot" style="background:#a5d6a7"></span><span>Donne &nbsp;<strong>29%</strong> (31)</span></div>
@@ -95,8 +95,8 @@
                 </div>
             </div>
 
-            <!-- 2. Fasce d'età -->
-            <!-- Nei grafici a barre la larghezza inline codifica il valore percentuale. -->
+            <!-- Grafico: fasce d'età del personale. -->
+            <!-- La larghezza inline di ogni barra rappresenta la percentuale indicata. -->
             <div class="chart-card">
                 <h3>Fasce d'età del personale</h3>
                 <div class="bar-chart">
@@ -115,8 +115,8 @@
                 </div>
             </div>
 
-            <!-- 3. Distribuzione regionale -->
-            <!-- Le etichette e i valori testuali affiancano le barre, che sono una rappresentazione visiva. -->
+            <!-- Grafico: distribuzione regionale del personale. -->
+            <!-- Etichette e valori testuali affiancano la rappresentazione a barre. -->
             <div class="chart-card">
                 <h3>Distribuzione regionale</h3>
                 <div class="bar-chart">
@@ -135,8 +135,8 @@
                 </div>
             </div>
 
-            <!-- 4. Ore di formazione -->
-            <!-- La larghezza è relativa al valore massimo del gruppo (414 ore = 100%). -->
+            <!-- Grafico: ore di formazione per ruolo. -->
+            <!-- Le larghezze sono relative al massimo del gruppo (414 ore = 100%). -->
             <div class="chart-card">
                 <h3>Ore di formazione 2023</h3>
                 <div class="bar-chart">
@@ -155,8 +155,8 @@
                 </div>
             </div>
 
-            <!-- 5. Rifiuti per tipologia (top 4) -->
-            <!-- La larghezza confronta le quantità; le classi cromatiche distinguono le serie e i rifiuti pericolosi. -->
+            <!-- Grafico: principali categorie di rifiuti. -->
+            <!-- Le larghezze confrontano le quantità; le classi distinguono le serie e i rifiuti pericolosi. -->
             <div class="chart-card">
                 <h3>Rifiuti principali 2023 (tonnellate)</h3>
                 <div class="bar-chart">
@@ -183,8 +183,8 @@
                 </div>
             </div>
 
-            <!-- 6. Investimento formazione 2022 vs 2023 -->
-            <!-- Barre comparative: entrambe usano la stessa scala relativa per confrontare i due anni. -->
+            <!-- Grafico: confronto degli investimenti in formazione. -->
+            <!-- Le due barre condividono la scala per confrontare gli anni. -->
             <div class="chart-card">
                 <h3>Investimento formazione (€)</h3>
                 <div class="compare-row">
@@ -207,7 +207,7 @@
         </div>
     </section>
 
-    <!-- SEZIONE ECONOMICA -->
+    <!-- Dettaglio degli indicatori economici. -->
     <section class="section">
         <div class="esg-block">
             <div class="esg-heading">
@@ -276,7 +276,7 @@
         </div>
     </section>
 
-    <!-- SEZIONE AMBIENTALE -->
+    <!-- Dettaglio degli indicatori ambientali. -->
     <section class="section green">
         <div class="esg-block">
             <div class="esg-heading">
@@ -344,7 +344,7 @@
         </div>
     </section>
 
-    <!-- SEZIONE SOCIALE -->
+    <!-- Dettaglio degli indicatori sociali. -->
     <section class="section">
         <div class="esg-block">
             <div class="esg-heading">
@@ -524,7 +524,7 @@
         </div>
     </section>
 
-    <!-- SEZIONE GOVERNANCE -->
+    <!-- Dettaglio degli indicatori di governance. -->
     <section class="section green">
         <div class="esg-block">
             <div class="esg-heading">
@@ -614,7 +614,7 @@
         </div>
     </section>
 
-    <!-- STIME E PROIEZIONI -->
+    <!-- Stime e proiezioni, distinte dai dati consuntivi. -->
     <section class="section">
         <h2>📈 Stime e proiezioni 2024–2025</h2>
         <p class="subtitle">

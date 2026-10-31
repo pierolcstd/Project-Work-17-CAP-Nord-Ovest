@@ -1,119 +1,83 @@
-// Nome versionato: incrementarlo quando cambiano le regole o gli asset da gestire.
-var CACHE_NAME = 'cap-nord-static-v2';
+// Cache minima delle immagini: intercetta solo richieste GET same-origin con
+// estensione immagine. HTML, CSS, JavaScript, PDF, API e risorse esterne restano
+// fuori dalla cache. La strategia rete-prima controlla la versione online a
+// ogni nuova richiesta e sostituisce la copia salvata se la risposta è valida;
+// se la rete non è disponibile, restituisce la copia in cache, se presente.
+// L'aggiornamento avviene quindi alla successiva richiesta dell'immagine, ad
+// esempio ricaricando o riaprendo la pagina, non mentre la pagina è ferma.
+var CACHE_NAME = 'cap-nord-images-v1';
+// Espressione regolare che riconosce le estensioni delle immagini ammesse.
+var IMAGE_ASSET = /\.(?:avif|gif|jpe?g|png|svg|webp)$/i;
 
-// Durata massima della cache: ogni risorsa viene considerata scaduta dopo 30 giorni.
-var CACHE_MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000;
-
-// Limita la cache agli asset statici same-origin, evitando HTML, PDF e richieste API.
-var STATIC_ASSET = /\.(?:css|js|png|jpe?g|webp|svg|woff2?)$/i;
-var CACHED_AT_HEADER = 'X-Cap-Nord-Cached-At';
-
-self.addEventListener('install', function (event) {
-    // install: evento di prima installazione o aggiornamento del worker;
-    // event.waitUntil mantiene la fase aperta finché skipWaiting non termina.
-    // Attiva subito la nuova versione del service worker senza attendere la chiusura delle schede.
-    event.waitUntil(self.skipWaiting());
-});
-
+// Rimuove le versioni precedenti delle cache create da questo progetto.
+// addEventListener registra la funzione da eseguire quando il worker si attiva.
 self.addEventListener('activate', function (event) {
-    // activate: evento eseguito dopo install, usato per migrare e ripulire le cache.
-    // Rimuove le versioni precedenti della cache e gli asset già più vecchi di 30 giorni.
+    // waitUntil mantiene l'attivazione in corso finché la pulizia è terminata.
     event.waitUntil(
-        // caches.keys() elenca tutte le cache di questo sito.
+        // keys() restituisce i nomi delle cache presenti per questo sito.
         caches.keys().then(function (cacheNames) {
-            // Elimina solo le cache di questo progetto, preservando cache di altri componenti.
+            // Promise.all attende il completamento di tutte le eliminazioni.
             return Promise.all(
                 cacheNames
+                    // filter seleziona solo le cache vecchie appartenenti al progetto.
                     .filter(function (cacheName) {
-                        return cacheName.indexOf('cap-nord-static-') === 0 &&
-                            cacheName !== CACHE_NAME;
+                        return cacheName !== CACHE_NAME &&
+                            (cacheName.indexOf('cap-nord-static-') === 0 ||
+                                cacheName.indexOf('cap-nord-images-') === 0);
                     })
+                    // map avvia delete() per ciascuna cache selezionata.
                     .map(function (cacheName) {
-                        // delete() rimuove la cache scelta e restituisce una Promise.
                         return caches.delete(cacheName);
                     })
             );
-        }).then(function () {
-            // Apre la cache della versione corrente, creandola se non esiste ancora.
-            return caches.open(CACHE_NAME);
-        }).then(function (cache) {
-            // keys() restituisce le richieste salvate, così si può controllare l'età di ognuna.
-            return cache.keys().then(function (requests) {
-                // Scade le risposte senza data valida e quelle oltre il limite temporale.
-                return Promise.all(requests.map(function (request) {
-                    return cache.match(request).then(function (response) {
-                        if (isExpired(response)) {
-                            // Elimina la singola risorsa scaduta senza cancellare le altre.
-                            return cache.delete(request);
-                        }
-                    });
-                }));
-            });
-        }).then(function () {
-            // Prende in carico le pagine aperte, così le richieste successive usano questo worker.
-            return self.clients.claim();
         })
     );
 });
 
-// Considera scaduta una risposta priva di data valida o più vecchia del limite configurato.
-function isExpired(response) {
-    // L'header personalizzato contiene il timestamp di salvataggio in millisecondi.
-    var cachedAt = response && Number(response.headers.get(CACHED_AT_HEADER));
-    // Date.now() usa lo stesso formato; un dato assente o non numerico viene trattato come scaduto.
-    return !cachedAt || Date.now() - cachedAt >= CACHE_MAX_AGE_MS;
-}
-
+// fetch si attiva per ogni richiesta effettuata da una pagina controllata.
 self.addEventListener('fetch', function (event) {
-    // fetch: evento generato per ogni richiesta intercettabile della pagina controllata.
+    // request contiene metodo e URL della richiesta originale.
     var request = event.request;
-    // URL fornisce origine e percorso per limitare l'intercettazione al sito e agli asset statici.
+    // URL separa origine e percorso per applicare i filtri sottostanti.
     var url = new URL(request.url);
 
-    // Lascia al browser le richieste non-GET, cross-origin e i contenuti non statici.
+    // Le richieste non selezionate proseguono senza intervento del service worker.
     if (request.method !== 'GET' ||
         url.origin !== self.location.origin ||
-        !STATIC_ASSET.test(url.pathname)) {
+        !IMAGE_ASSET.test(url.pathname)) {
         return;
     }
 
+    // Chiede una risposta aggiornata alla rete (con eventuale validazione HTTP);
+    // una risposta valida rimpiazza la copia in cache, mentre gli errori HTTP
+    // vengono restituiti senza nasconderli. Solo un errore di rete usa la cache.
+    // respondWith permette al worker di fornire la risposta in modo asincrono.
     event.respondWith(
-        // respondWith() fa restituire al browser la risposta prodotta da questa strategia.
+        // open() apre la cache del progetto o la crea se non esiste ancora.
         caches.open(CACHE_NAME).then(function (cache) {
-            // Usa la cache solo finché la risorsa non ha superato i 30 giorni.
+            // match() cerca nella cache una risposta associata a questa richiesta.
             return cache.match(request).then(function (cachedResponse) {
-                if (cachedResponse && !isExpired(cachedResponse)) {
-                    return cachedResponse;
-                }
-
-                // Elimina l'eventuale copia scaduta e richiede una versione aggiornata alla rete.
-                // Promise.resolve() uniforma il flusso anche quando non c'è una copia da eliminare.
-                var removeExpired = cachedResponse ? cache.delete(request) : Promise.resolve();
-                return removeExpired.then(function () {
-                    // fetch() invia la richiesta alla rete quando non esiste una copia valida.
-                    return fetch(request);
-                }).then(function (response) {
-                    // Cache solo risposte same-origin valide; gli errori non vengono memorizzati.
+                // fetch() interroga la rete; cache: 'no-cache' ne richiede la
+                // rivalidazione invece di riusare una copia HTTP non verificata.
+                return fetch(request, { cache: 'no-cache' }).then(function (response) {
+                    // ok esclude gli errori HTTP; basic identifica una risposta same-origin.
                     if (!response.ok || response.type !== 'basic') {
                         return response;
                     }
 
-                    // Salva la data di inserimento per poter applicare il limite di 30 giorni.
-                    // Le risposte sono immutabili: si ricreano header e Response per aggiungere il timestamp.
-                    var headers = new Headers(response.headers);
-                    headers.set(CACHED_AT_HEADER, String(Date.now()));
-                    // clone() conserva il body della risposta originale per creare una copia cacheable.
-                    var responseToCache = new Response(response.clone().body, {
-                        status: response.status,
-                        statusText: response.statusText,
-                        headers: headers
-                    });
-
-                    // Attende il salvataggio prima di restituire la risposta al browser.
-                    // put() associa la richiesta alla risposta; Promise mantiene l'ordine delle operazioni.
-                    return cache.put(request, responseToCache).then(function () {
+                    // clone() duplica la risposta perché put() consuma il suo body.
+                    // put() salva/sostituisce la copia; poi si restituisce la risposta online.
+                    return cache.put(request, response.clone()).then(function () {
                         return response;
                     });
+                }, function (error) {
+                    // Il secondo callback di then gestisce errori di rete, non errori HTTP.
+                    if (cachedResponse) {
+                        return cachedResponse;
+                    }
+
+                    // Senza una copia offline, rilancia l'errore originale.
+                    throw error;
                 });
             });
         })

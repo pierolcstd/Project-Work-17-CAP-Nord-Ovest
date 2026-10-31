@@ -24,7 +24,7 @@ function showReport(year) {
     if (target) target.classList.add('active');
 }
 
-/* Cache-first per le risorse statiche: la cache del browser accelera le visite successive. */
+/* Il service worker memorizza solo le immagini statiche dello stesso sito. */
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').catch(function (error) {
         console.error('Registrazione del service worker non riuscita:', error);

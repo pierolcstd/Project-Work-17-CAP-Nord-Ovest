@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sito web di analisi della sostenibilità d'impresa di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia, basata sul Bilancio di Sostenibilità 2024.">
     <title>CAP Nord Ovest – Sostenibilità d'Impresa</title>
-    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
-    <link rel="preload" as="image" href="img/filiera.jpg" fetchpriority="high">
+    <!-- Precarica l'immagine hero, elemento visivo principale della pagina. -->
+    <link rel="preload" as="image" href="img/cap-home.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- Intestazione condivisa e navigazione principale. -->
     <header class="header">
         <div class="header-inner">
         <div class="logo">
@@ -36,33 +36,18 @@
         </nav>
     </header>
 
-    <!-- HERO -->
-    <!--section class="hero-home">
-        <p class="tag">Project Work · Tecnologia Web per la Sostenibilità d'Impresa</p>
-        <h1>Sostenibilità d'impresa nel settore agroalimentare</h1>
-        <p>
-            Un'analisi delle performance ambientali, sociali e di governance
-            di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia,
-            basata sul primo Bilancio di Sostenibilità 2024.
-        </p>
-    </section-->
-        <!-- IMMAGINE FILIERA -->
-    <!--div class="filiera-img-wrap">
-        <img src="img/filiera.jpg" alt="Filiera agricola CAP Nord Ovest">
-        <div class="overlay"></div>
-    </div-->
+    <!-- Hero Home: silos per cereali e coltivazioni. -->
 
     <section class="hero-img">
-        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
-        <img src="img/filiera.jpg" alt="Filiera agricola CAP Nord Ovest" fetchpriority="high" decoding="async">
-        <!--p class="tag">Project Work · Tecnologia Web per la Sostenibilità d'Impresa</p-->
+        <!-- L'immagine hero ha priorità alta per favorire il caricamento dell'LCP. -->
+        <img src="img/cap-home.jpg" alt="Silos per cereali accanto a un campo di mais" fetchpriority="high" decoding="async">
         <h2>Sostenibilità d'impresa nel settore agroalimentare</h2>
         <p> Un'analisi delle performance ambientali, sociali e di governance
             di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia,
             basata sul primo Bilancio di Sostenibilità 2024. </p>
     </section>
     <div class="divider-green"></div>
-    <!-- AZIENDA + NUMERI -->
+    <!-- Profilo del consorzio e principali dati di sintesi. -->
     <div class="intro-split">
         <div class="intro-text">
             <h2>CAP Nord Ovest</h2>
@@ -110,7 +95,7 @@
         </div>
     </div>
 
-    <!-- TEMI ESG -->
+    <!-- Temi ambientali, sociali e di governance trattati nel progetto. -->
     <div class="temi-header">
         <h2>I temi trattati</h2>
     </div>
@@ -173,13 +158,13 @@
         </div>
     </div>
 
-    <!-- IMMAGINE SOSTENIBILITÀ -->
+    <!-- Immagine di sostenibilità caricata quando si avvicina alla viewport. -->
     <div class="sost-img-wrap">
-        <!-- Immagine fuori viewport: caricamento differito e priorità bassa per liberare banda iniziale. -->
-        <img src="img/sostenibilita.jpg" alt="Sostenibilità ambientale" loading="lazy" fetchpriority="low" decoding="async">
+        <!-- Il caricamento differito riduce il lavoro iniziale della pagina. -->
+        <img src="img/sostenibilita.jpg" alt="Filari di colture verdi in un campo al tramonto" loading="lazy" fetchpriority="low" decoding="async">
     </div>
 
-    <!-- CERTIFICAZIONI -->
+    <!-- Certificazioni del consorzio riportate nel bilancio. -->
     <div class="cert-strip">
         <span class="cert-label">Certificazioni ottenute</span>
         <div class="cert-list">
@@ -189,7 +174,7 @@
         </div>
     </div>
 
-    <!-- CONTESTO -->
+    <!-- Fonti, standard e ambito del Project Work. -->
     <section class="context-section">
         <h2>Il contesto del progetto</h2>
         <p>
@@ -219,7 +204,7 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Chiusura della pagina e note del progetto. -->
     <footer class="footer">
         <p>Project Work – Tecnologia Web per la Sostenibilità d'Impresa</p>
     </footer>

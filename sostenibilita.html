@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sito web di analisi della sostenibilità d'impresa di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia, basata sul Bilancio di Sostenibilità 2024.">
     <title>Sostenibilità - CAP Nord Ovest</title>
-    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
+    <!-- Precarica l'immagine hero, elemento visivo principale della pagina. -->
     <link rel="preload" as="image" href="img/sostenibilita.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,10 +35,10 @@
         </nav>
     </header>
 
-    <!-- HERO con immagine -->
+    <!-- Hero Sostenibilità: filari di colture in un paesaggio rurale. -->
     <section class="hero-img">
-        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
-        <img src="img/sostenibilita.jpg" alt="" fetchpriority="high" decoding="async">
+        <!-- L'immagine hero ha priorità alta per favorire il caricamento dell'LCP. -->
+        <img src="img/sostenibilita.jpg" alt="Filari di colture verdi in un campo al tramonto" fetchpriority="high" decoding="async">
         <h2>Sostenibilità d'Impresa</h2>
         <p>Ambiente, Persone e Governance al centro delle nostre scelte</p>
     </section>

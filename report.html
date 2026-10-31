@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sito web di analisi della sostenibilità d'impresa di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia, basata sul Bilancio di Sostenibilità 2024.">
     <title>Report di Sostenibilità - CAP Nord Ovest</title>
-    <!-- SEO/Core Web Vitals: anticipa il download dell'immagine principale per migliorare il caricamento dell'LCP. -->
+    <!-- Precarica l'immagine hero, elemento visivo principale della pagina. -->
     <link rel="preload" as="image" href="img/report.jpg" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,9 +35,10 @@
     </nav>
 </header>
 
+<!-- Hero Report: grafico e analisi dei dati. -->
 <section class="hero-img">
-        <!-- Priorità alta per l'immagine LCP; decoding asincrono evita di bloccare il rendering. -->
-        <img src="img/report.jpg" alt="Report download" fetchpriority="high" decoding="async">
+        <!-- L'immagine hero ha priorità alta per favorire il caricamento dell'LCP. -->
+        <img src="img/report.jpg" alt="Grafico a linee su un foglio di lavoro accanto a un righello e penne" fetchpriority="high" decoding="async">
         <h2>Report di Sostenibilità</h2>
         <p>Bilanci di Sostenibilità – CAP Nord Ovest</p>
 </section>
@@ -56,7 +58,7 @@
         </select>
     </div>
 
-    <!-- REPORT 2024 -->
+    <!-- Scheda e collegamento al Bilancio di Sostenibilità 2024. -->
     <div id="report-2024" class="report-panel active">
         <div class="report-card">
             <h3>Bilancio di Sostenibilità 2024</h3>
@@ -81,7 +83,7 @@
 
     </div>
 
-    <!-- REPORT 2025 (placeholder) -->
+    <!-- Avviso temporaneo: il report 2025 non è ancora disponibile. -->
     <div id="report-2025" class="report-panel">
         <div class="coming-soon-card">
             <p style="font-size:2em; margin:0 0 10px;">🕒</p>
