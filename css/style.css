@@ -5,7 +5,7 @@
 /* Barre impilate verticalmente; ogni riga accosta etichetta, traccia e riempimento percentuale. */
 .bar-chart{display:flex;flex-direction:column;gap:10px}
 /* La larghezza inline definisce il valore; box-sizing include testo e padding nelle misure percentuali. */
-.bar-fill{height:100%;background:#2e7d32;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.8em;font-weight:bold;min-width:28px;box-sizing:border-box}
+.bar-fill{height:100%;background:#2e7d32;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:clamp(0.7em,1.8vw,0.8em);font-weight:bold;min-width:max-content;box-sizing:border-box;white-space:nowrap}
 .bar-fill.accent{background:#66bb6a}
 .bar-fill.alt{background:#388e3c}
 .bar-fill.alt2{background:#43a047}
@@ -249,7 +249,9 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 }
 /* 768px – mobile general */
 @media screen and (max-width:768px){
-.bar-name{min-width:80px;font-size:0.8em}
+.bar-row{align-items:stretch;flex-direction:column;gap:4px}
+.bar-name{min-width:0;font-size:0.8em;text-align:left}
+.bar-track{flex:none;width:100%}
 .cards{flex-direction:column}
 .cert-strip{gap:16px;padding:28px 6%}
 .charts-grid{grid-template-columns:1fr}
