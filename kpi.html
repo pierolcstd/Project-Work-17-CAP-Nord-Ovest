@@ -65,7 +65,7 @@
                 <p>Soci del Consorzio</p>
             </div>
             <div class="kpi-box">
-                <h3>3</h3>
+                <h3>4</h3>
                 <p>Certificazioni ottenute</p>
             </div>
         </div>
@@ -75,135 +75,201 @@
     <section class="section green">
         <h2>📊 Grafici ESG – Visualizzazione rapida</h2>
         <p>I principali indicatori ESG in forma grafica, ottimizzati per la lettura su smartphone.</p>
-        <!-- La griglia CSS adatta le schede alla larghezza disponibile. -->
+        <!-- <p class="scale-key-note"><span class="scale-key-ramp" aria-hidden="true"></span> Colori distinti per confrontare i valori; le etichette riportano sempre i dati esatti.</p> -->
+        <h3 class="chart-category-title">Dimensione ambientale</h3>
         <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Consumi energetici per fonte (2023)</h3>
+                <div class="donut-wrap">
+                    <div class="donut donut-large" role="img" aria-label="Ripartizione dei consumi energetici: elettricità 11.448 GJ, gas metano 16.986 GJ, GPL 5.728 GJ" style="background:conic-gradient(#0072b2 0% 33.5%,#332288 33.5% 83.2%,#56b4e9 83.2% 100%)">
+                        <div class="donut-hole"><span>34.162</span><small>GJ totali</small></div>
+                    </div>
+                    <div class="share-list">
+                        <div class="chart-legend-row"><span class="chart-swatch scale-6"></span><span>Elettricità · 11.448 GJ (33,5%)</span></div>
+                        <div class="chart-legend-row"><span class="chart-swatch scale-9"></span><span>Gas metano · 16.986 GJ (49,7%)</span></div>
+                        <div class="chart-legend-row"><span class="chart-swatch scale-1"></span><span>GPL · 5.728 GJ (16,8%)</span></div>
+                    </div>
+                </div>
+                <p class="chart-note">Quote calcolate sul totale pubblicato; la fetta più scura indica la fonte con maggior consumo.</p>
+            </div>
+            <div class="chart-card">
+                <h3>Tipologie principali di rifiuti (2023)</h3>
+                <div class="lollipop-list">
+                    <div class="lollipop-row"><span class="lollipop-label">Imballaggi misti</span><div class="lollipop-track"><span class="scale-marker scale-9" style="--marker-position:100%"></span></div><span class="lollipop-value">65,05 t</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Legno</span><div class="lollipop-track"><span class="scale-marker scale-7" style="--marker-position:62.4%"></span></div><span class="lollipop-value">40,58 t</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Ferro</span><div class="lollipop-track"><span class="scale-marker scale-5" style="--marker-position:26.5%"></span></div><span class="lollipop-value">17,25 t</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Plastica</span><div class="lollipop-track"><span class="scale-marker scale-3" style="--marker-position:10.2%"></span></div><span class="lollipop-value">6,64 t</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Rifiuti misti</span><div class="lollipop-track"><span class="scale-marker scale-1" style="--marker-position:5.1%"></span></div><span class="lollipop-value">3,32 t</span></div>
+                </div>
+                <div class="chart-axis"><span>0</span><span>32,5</span><span>65,1 t</span></div>
+                <p class="chart-note">Dot plot in scala lineare sui primi cinque flussi: la posizione indica la quantità e i colori distinguono i valori.</p>
+            </div>
+            <div class="chart-card">
+                <h3>Composizione dei rifiuti (2023)</h3>
+                <div class="donut-wrap">
+                    <div class="donut donut-large" role="img" aria-label="Rifiuti non pericolosi 136,97 tonnellate, rifiuti pericolosi 5,96 tonnellate" style="background:conic-gradient(#332288 0% 95.8%,#56b4e9 95.8% 100%)">
+                        <div class="donut-hole"><span>95,8%</span><small>non pericolosi</small></div>
+                    </div>
+                    <div class="share-list">
+                        <div class="chart-legend-row"><span class="chart-swatch scale-9"></span><span>Non pericolosi · 136,97 t</span></div>
+                        <div class="chart-legend-row"><span class="chart-swatch scale-1"></span><span>Pericolosi · 5,96 t</span></div>
+                    </div>
+                </div>
+                <p class="chart-note">Quote calcolate sui subtotali (142,93 t); la somma differisce di 0,01 t dal totale rifiuti pubblicato.</p>
+            </div>
+        </div>
 
-            <!-- Grafico: composizione di genere del personale. -->
-            <!-- Il gradiente conico disegna le percentuali senza immagini o librerie esterne. -->
+        <h3 class="chart-category-title">Dimensione sociale</h3>
+        <div class="charts-grid">
             <div class="chart-card">
                 <h3>Composizione di genere (2023)</h3>
                 <div class="donut-wrap">
-                    <!-- Gli intervalli del gradiente rappresentano le quote; il centro mostra il totale. -->
-                    <div class="donut" style="background: conic-gradient(#2e7d32 0% 71%, #a5d6a7 71% 100%);">
+                    <div class="donut donut-large" role="img" aria-label="76 uomini, 71 per cento; 31 donne, 29 per cento" style="background:conic-gradient(#332288 0% 71%,#56b4e9 71% 100%)">
                         <div class="donut-hole"><span>107</span><small>dip.</small></div>
                     </div>
-                    <!-- La legenda riporta colori, percentuali e conteggi in forma testuale. -->
-                    <div class="chart-legend">
-                        <div class="leg-row"><span class="leg-dot" style="background:#2e7d32"></span><span>Uomini &nbsp;<strong>71%</strong> (76)</span></div>
-                        <div class="leg-row"><span class="leg-dot" style="background:#a5d6a7"></span><span>Donne &nbsp;<strong>29%</strong> (31)</span></div>
+                    <div class="share-list">
+                        <div class="chart-legend-row"><span class="chart-swatch scale-9"></span><span>Uomini · 71% (76)</span></div>
+                        <div class="chart-legend-row"><span class="chart-swatch scale-1"></span><span>Donne · 29% (31)</span></div>
                     </div>
                 </div>
             </div>
-
-            <!-- Grafico: fasce d'età del personale. -->
-            <!-- La larghezza inline di ogni barra rappresenta la percentuale indicata. -->
             <div class="chart-card">
-                <h3>Fasce d'età del personale</h3>
-                <div class="bar-chart">
-                    <div class="bar-row">
-                        <span class="bar-name">Under 30</span>
-                        <div class="bar-track"><div class="bar-fill accent" style="width:12%">12%</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">30–50 anni</span>
-                        <div class="bar-track"><div class="bar-fill" style="width:44%">44%</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Over 50</span>
-                        <div class="bar-track"><div class="bar-fill dark" style="width:44%">44%</div></div>
-                    </div>
+                <h3>Fasce d'età del personale (2023)</h3>
+                <div class="segment-chart" role="img" aria-label="Under 30: 12 per cento; da 30 a 50 anni: 44 per cento; over 50: 44 per cento">
+                    <span class="age-under-30" style="flex:12"></span>
+                    <span class="age-30-50" style="flex:44"></span>
+                    <span class="age-over-50" style="flex:44"></span>
                 </div>
+                <div class="share-list" style="margin-top:14px">
+                    <div class="chart-legend-row"><span class="chart-swatch age-under-30"></span><span>Under 30</span><strong>12%</strong></div>
+                    <div class="chart-legend-row"><span class="chart-swatch age-30-50"></span><span>30–50 anni</span><strong>44%</strong></div>
+                    <div class="chart-legend-row"><span class="chart-swatch age-over-50"></span><span>Over 50</span><strong>44%</strong></div>
+                </div>
+                <p class="chart-note">Barra al 100%: ciascun segmento è proporzionale alla quota sul totale.</p>
             </div>
-
-            <!-- Grafico: distribuzione regionale del personale. -->
-            <!-- Etichette e valori testuali affiancano la rappresentazione a barre. -->
             <div class="chart-card">
-                <h3>Distribuzione regionale</h3>
-                <div class="bar-chart">
-                    <div class="bar-row">
-                        <span class="bar-name">Piemonte</span>
-                        <div class="bar-track"><div class="bar-fill" style="width:87%">87% (93)</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Liguria</span>
-                        <div class="bar-track"><div class="bar-fill accent" style="width:12%">12%</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Valle d'Aosta</span>
-                        <div class="bar-track"><div class="bar-fill alt" style="width:1%; min-width:34px">1%</div></div>
-                    </div>
+                <h3>Ore medie annue di formazione per dipendente (GRI 404-1, 2023)</h3>
+                <div class="lollipop-list">
+                    <div class="lollipop-row"><span class="lollipop-label">Quadri e dirigenti</span><div class="lollipop-track"><span class="scale-marker scale-9" style="--marker-position:100%"></span></div><span class="lollipop-value">68 h</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Impiegati</span><div class="lollipop-track"><span class="scale-marker scale-4" style="--marker-position:26.5%"></span></div><span class="lollipop-value">18 h</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Operai</span><div class="lollipop-track"><span class="scale-marker scale-1" style="--marker-position:5.9%"></span></div><span class="lollipop-value">4 h</span></div>
                 </div>
+                <div class="chart-axis"><span>0</span><span>34</span><span>68 h</span></div>
+                <p class="chart-note">Dot plot delle ore medie annue di formazione per dipendente; la somma di categoria non è un totale aziendale.</p>
             </div>
+        </div>
 
-            <!-- Grafico: ore di formazione per ruolo. -->
-            <!-- Le larghezze sono relative al massimo del gruppo (414 ore = 100%). -->
+        <h3 class="chart-category-title">Governance</h3>
+        <div class="charts-grid">
             <div class="chart-card">
-                <h3>Ore di formazione 2023</h3>
-                <div class="bar-chart">
-                    <div class="bar-row">
-                        <span class="bar-name">Impiegati</span>
-                        <div class="bar-track"><div class="bar-fill" style="width:100%">414 h</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Resp. settore</span>
-                        <div class="bar-track"><div class="bar-fill alt" style="width:62%">256 h</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Dirigenti/Quadri</span>
-                        <div class="bar-track"><div class="bar-fill accent" style="width:27%">112 h</div></div>
-                    </div>
+                <h3>Composizione degli organi aziendali</h3>
+                <div class="lollipop-list">
+                    <div class="lollipop-row"><span class="lollipop-label">Consiglio di amm.</span><div class="lollipop-track"><span class="range-segment scale-9" style="--range-start:55.6%;--range-width:44.4%"></span></div><span class="lollipop-value">15–27</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Comitato esecutivo</span><div class="lollipop-track"><span class="scale-marker scale-7" style="--marker-position:25.9%"></span></div><span class="lollipop-value">7</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Collegio sindacale</span><div class="lollipop-track"><span class="scale-marker scale-5" style="--marker-position:18.5%"></span></div><span class="lollipop-value">5</span></div>
+                    <div class="lollipop-row"><span class="lollipop-label">Organo di vigilanza</span><div class="lollipop-track"><span class="scale-marker scale-1" style="--marker-position:11.1%"></span></div><span class="lollipop-value">3</span></div>
                 </div>
+                <div class="chart-axis"><span>0</span><span>13,5</span><span>27 componenti</span></div>
+                <p class="chart-note">Il CdA è mostrato come intervallo 15–27; per gli altri organi il punto indica il numero riportato.</p>
             </div>
-
-            <!-- Grafico: principali categorie di rifiuti. -->
-            <!-- Le larghezze confrontano le quantità; le classi distinguono le serie e i rifiuti pericolosi. -->
             <div class="chart-card">
-                <h3>Rifiuti principali 2023 (tonnellate)</h3>
-                <div class="bar-chart">
-                    <div class="bar-row">
-                        <span class="bar-name">Imballaggi misti</span>
-                        <div class="bar-track"><div class="bar-fill" style="width:100%">65 t</div></div>
+                <h3>Stakeholder coinvolti</h3>
+                <div class="stakeholder-tree" role="tree" aria-label="Nove categorie di stakeholder, raggruppate per ambito">
+                <div class="stakeholder-root" role="treeitem" aria-level="1">Stakeholder mappati <strong>9 categorie</strong></div>
+                <div class="stakeholder-branches" role="group">
+                    <div class="stakeholder-branch">
+                        <h4>Interni</h4>
+                        <ul role="group">
+                            <li role="treeitem" aria-level="2">Dipendenti e agenti</li>
+                            <li role="treeitem" aria-level="2">Soci</li>
+                        </ul>
                     </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Legno</span>
-                        <div class="bar-track"><div class="bar-fill alt" style="width:62%">41 t</div></div>
+                    <div class="stakeholder-branch">
+                        <h4>Filiera e relazioni</h4>
+                        <ul role="group">
+                            <li role="treeitem" aria-level="2">Clienti</li>
+                            <li role="treeitem" aria-level="2">Agricoltori e imprese agricole</li>
+                            <li role="treeitem" aria-level="2">Fornitori e distributori</li>
+                            <li role="treeitem" aria-level="2">Istituti bancari</li>
+                        </ul>
                     </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Ferro</span>
-                        <div class="bar-track"><div class="bar-fill accent" style="width:27%">17 t</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">Plastica</span>
-                        <div class="bar-track"><div class="bar-fill alt2" style="width:10%; min-width:34px">7 t</div></div>
-                    </div>
-                    <div class="bar-row">
-                        <span class="bar-name">⚠ Pericolosi</span>
-                        <div class="bar-track"><div class="bar-fill warn" style="width:9%; min-width:40px">6 t</div></div>
+                    <div class="stakeholder-branch">
+                        <h4>Conoscenza e territorio</h4>
+                        <ul role="group">
+                            <li role="treeitem" aria-level="2">Scuole, ricerca e innovazione</li>
+                            <li role="treeitem" aria-level="2">Associazioni di categoria</li>
+                            <li role="treeitem" aria-level="2">Territorio e ambiente</li>
+                        </ul>
                     </div>
                 </div>
+                </div>
+                <p class="chart-note">Le nove categorie indicate nel report sono raggruppate per ambito solo per facilitarne la lettura; i gruppi non rappresentano priorità o dimensioni quantitative.</p>
             </div>
-
-            <!-- Grafico: confronto degli investimenti in formazione. -->
-            <!-- Le due barre condividono la scala per confrontare gli anni. -->
             <div class="chart-card">
-                <h3>Investimento formazione (€)</h3>
-                <div class="compare-row">
-                    <div class="compare-bars">
-                        <div class="compare-bar-row">
-                            <span class="compare-year">2022</span>
-                            <div class="bar-track"><div class="bar-fill accent" style="width:90%">40.417 €</div></div>
-                        </div>
-                        <div class="compare-bar-row">
-                            <span class="compare-year">2023</span>
-                            <div class="bar-track"><div class="bar-fill" style="width:96%">42.961 €</div></div>
-                        </div>
+                <h3>Segnalazioni whistleblowing (2023)</h3>
+                <div class="zero-stat" role="img" aria-label="Zero segnalazioni whistleblowing"><span>0</span></div>
+                <p class="chart-note" style="text-align:center">segnalazioni ricevute nell'esercizio.</p>
+            </div>
+        </div>
+
+        <h3 class="chart-category-title">Situazione economica e finanziaria</h3>
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Valore economico generato</h3>
+                <div class="year-pair">
+                    <div class="year-value scale-9"><span>2022</span><strong>265,29 M€</strong><small>riferimento</small></div>
+                    <div class="year-value scale-8"><span>2023</span><strong>264,84 M€</strong><small>−0,2%</small></div>
+                </div>
+                <p class="chart-note">Confronto anno su anno. Il valore economico generato non coincide con il fatturato.</p>
+            </div>
+            <div class="chart-card">
+                <h3>Composizione del valore distribuito (2023)</h3>
+                <div class="donut-wrap">
+                    <div class="donut donut-large" role="img" aria-label="Composizione del valore economico distribuito: costi operativi 256.237.222 euro; personale 6.249.198 euro; finanziatori 2.482.067 euro; pubblica amministrazione 27.000 euro" style="background:conic-gradient(#332288 0% 96.7%,#f0e442 96.7% 99.06%,#d55e00 99.06% 99.99%,#56b4e9 99.99% 100%)">
+                        <div class="donut-hole"><span>265 M€</span><small>distribuiti</small></div>
+                    </div>
+                    <div class="share-list">
+                        <div class="chart-legend-row"><span class="chart-swatch scale-9"></span><span>Costi operativi · 256,24 M€</span></div>
+                        <div class="chart-legend-row"><span class="chart-swatch scale-7"></span><span>Personale · 6,25 M€</span></div>
+                        <div class="chart-legend-row"><span class="chart-swatch scale-4"></span><span>Finanziatori · 2,48 M€</span></div>
+                        <div class="chart-legend-row"><span class="chart-swatch scale-1"></span><span>Pubblica amministrazione · 0,03 M€</span></div>
                     </div>
                 </div>
-                <div style="font-size:0.83em; color:#555; margin-top:10px;">
-                    📈 Crescita <strong>+6,3%</strong> anno su anno · 782 ore totali erogate nel 2023
-                </div>
+                <p class="chart-note">La quota dei costi operativi è circa il 96,7% del valore distribuito; le quote minori sono indicate anche in legenda.</p>
             </div>
-
+            <div class="chart-card">
+                <h3>Investimenti per ambito e anno</h3>
+                <div class="dot-legend"><span><i class="dot-key"></i>2022</span><span><i class="dot-key year-2023"></i>2023</span></div>
+                <div class="investment-list">
+                    <div class="investment-row">
+                        <span class="investment-label">Formazione</span>
+                        <div class="investment-year-line"><span class="investment-year">22</span><div class="investment-track"><i class="investment-point scale-2" style="--marker-position:7.5%"></i></div><span class="investment-value">40.417 €</span></div>
+                        <div class="investment-year-line"><span class="investment-year">23</span><div class="investment-track"><i class="investment-point year-2023 scale-3" style="--marker-position:8%"></i></div><span class="investment-value">42.961 €</span></div>
+                    </div>
+                    <div class="investment-row">
+                        <span class="investment-label">Ricerca &amp; sviluppo · una tantum</span>
+                        <div class="investment-year-line"><span class="investment-year">22</span><div class="investment-track"><i class="investment-point scale-4" style="--marker-position:14.4%"></i></div><span class="investment-value">77.535 €</span></div>
+                        <div class="investment-year-line"><span class="investment-year">23</span><span class="investment-missing">dato assente</span></div>
+                    </div>
+                    <div class="investment-row">
+                        <span class="investment-label">Ristrutturazione</span>
+                        <div class="investment-year-line"><span class="investment-year">22</span><div class="investment-track"><i class="investment-point scale-9" style="--marker-position:100%"></i></div><span class="investment-value">540.000 €</span></div>
+                        <div class="investment-year-line"><span class="investment-year">23</span><div class="investment-track"><i class="investment-point year-2023 scale-8" style="--marker-position:35.7%"></i></div><span class="investment-value">193.000 €</span></div>
+                    </div>
+                    <div class="investment-row">
+                        <span class="investment-label">Sicurezza</span>
+                        <div class="investment-year-line"><span class="investment-year">22</span><div class="investment-track"><i class="investment-point scale-6" style="--marker-position:29.6%"></i></div><span class="investment-value">160.000 €</span></div>
+                        <div class="investment-year-line"><span class="investment-year">23</span><div class="investment-track"><i class="investment-point year-2023 scale-5" style="--marker-position:23.5%"></i></div><span class="investment-value">127.000 €</span></div>
+                    </div>
+                    <div class="investment-row">
+                        <span class="investment-label">Ambiente e rifiuti</span>
+                        <div class="investment-year-line"><span class="investment-year">22</span><div class="investment-track"><i class="investment-point scale-7" style="--marker-position:31.1%"></i></div><span class="investment-value">168.000 €</span></div>
+                        <div class="investment-year-line"><span class="investment-year">23</span><div class="investment-track"><i class="investment-point year-2023 scale-1" style="--marker-position:6.1%"></i></div><span class="investment-value">33.000 €</span></div>
+                    </div>
+                </div>
+                <div class="chart-axis investment-axis"><span>0</span><span>270.000</span><span>540.000 €</span></div>
+                <p class="chart-note">Dot plot su scala comune 0–540.000 €. Il colore distingue le posizioni nella serie, l'etichetta riporta l'importo e il cerchio vuoto indica il 2023. R&amp;S 2023 non riportato.</p>
+            </div>
         </div>
     </section>
 
@@ -215,64 +281,92 @@
                 <h2>Performance economica e finanziaria</h2>
             </div>
             <div class="table-scroll">
-            <table class="kpi-table">
+            <table class="kpi-table performance-table">
                 <thead>
                     <tr>
                         <th>Indicatore</th>
                         <th>2022</th>
                         <th>2023</th>
+                        <th>Variazione (%)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="highlight-row">
                         <td>Valore economico direttamente generato</td>
-                        <td class="val">265.292.432 €</td>
+                        <td class="val"><strong>265.292.432 €</strong></td>
                         <td class="val">264.843.630 €</td>
+                        <td class="val">−0,2%</td>
                     </tr>
                     <tr>
                         <td>Valore economico distribuito (totale)</td>
                         <td class="val">261.224.201 €</td>
-                        <td class="val">264.995.487 €</td>
+                        <td class="val"><strong>264.995.487 €</strong></td>
+                        <td class="val">+1,4%</td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;&nbsp;↳ Costi operativi riclassificati</td>
-                        <td>254.326.872 €</td>
-                        <td>256.237.222 €</td>
+                        <td class="val">254.326.872 €</td>
+                        <td class="val"><strong>256.237.222 €</strong></td>
+                        <td class="val">+0,8%</td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;&nbsp;↳ Remunerazione del personale</td>
-                        <td>5.904.902 €</td>
-                        <td>6.249.198 €</td>
+                        <td class="val">5.904.902 €</td>
+                        <td class="val"><strong>6.249.198 €</strong></td>
+                        <td class="val">+5,8%</td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;&nbsp;↳ Remunerazione dei finanziatori</td>
-                        <td>780.988 €</td>
-                        <td>2.482.067 €</td>
+                        <td class="val">780.988 €</td>
+                        <td class="val"><strong>2.482.067 €</strong></td>
+                        <td class="val">+217,8%</td>
                     </tr>
                     <tr>
                         <td>&nbsp;&nbsp;&nbsp;↳ Remunerazione Pubblica Amministrazione</td>
-                        <td>211.439 €</td>
-                        <td>27.000 €</td>
+                        <td class="val"><strong>211.439 €</strong></td>
+                        <td class="val">27.000 €</td>
+                        <td class="val">−87,2%</td>
                     </tr>
                     <tr class="highlight-row">
                         <td>Valore economico trattenuto</td>
-                        <td class="val">4.068.231 €</td>
+                        <td class="val"><strong>4.068.231 €</strong></td>
                         <td class="val">-151.857 €</td>
+                        <td class="val">−103,7%</td>
                     </tr>
                     <tr>
-                        <td>Investimenti in Ricerca &amp; Sviluppo</td>
-                        <td>77.535 €</td>
-                        <td class="note">N/D</td>
+                        <td>Ricerca e sviluppo — finanziamento una tantum per attività di Precision Farming</td>
+                        <td class="val">77.535 €</td>
+                        <td class="note">Non riportato</td>
+                        <td class="note">Non calcolabile</td>
                     </tr>
                     <tr>
                         <td>Investimenti in formazione del personale</td>
-                        <td>40.417 €</td>
-                        <td class="val">42.961 €</td>
+                        <td class="val">40.417 €</td>
+                        <td class="val"><strong>42.961 €</strong></td>
+                        <td class="val">+6,3%</td>
+                    </tr>
+                    <tr>
+                        <td>Investimenti in ristrutturazione impianti/strutture</td>
+                        <td class="val"><strong>540.000 €</strong></td>
+                        <td class="val">193.000 €</td>
+                        <td class="val">−64,3%</td>
+                    </tr>
+                    <tr>
+                        <td>Investimenti in sicurezza dei lavoratori</td>
+                        <td class="val"><strong>160.000 €</strong></td>
+                        <td class="val">127.000 €</td>
+                        <td class="val">−20,6%</td>
+                    </tr>
+                    <tr>
+                        <td>Investimenti in ambiente e gestione dei rifiuti</td>
+                        <td class="val"><strong>168.000 €</strong></td>
+                        <td class="val">33.000 €</td>
+                        <td class="val">−80,4%</td>
                     </tr>
                 </tbody>
             </table>
             </div>
-            <p class="source-note">Fonte: GRI 201-1 – Valore economico direttamente generato e distribuito. Bilancio di Sostenibilità CAP Nord Ovest 2024.</p>
+            <p class="source-note">La variazione percentuale è calcolata come (2023 − 2022) / 2022 × 100; un segno positivo indica un aumento e uno negativo una diminuzione. I risultati sono arrotondati a una cifra decimale. I 77.535 € per Ricerca e Sviluppo sono un finanziamento una tantum riferito alle attività di ricerca in Precision Farming (2022), non una spesa ricorrente; il dato 2023 non è riportato e la variazione non è calcolabile. Fonte: GRI 201-1 – Valore economico direttamente generato e distribuito. Il valore generato non è il fatturato. Bilancio di Sostenibilità CAP Nord Ovest 2024, pp. 33, 58 e appendice GRI, p. 60.</p>
         </div>
     </section>
 
@@ -288,13 +382,46 @@
             <table class="kpi-table">
                 <thead>
                     <tr>
-                        <th>Rifiuti prodotti (2023) – per tipologia</th>
+                        <th>Codice CER</th>
+                        <th>Tipologia di rifiuto (2023)</th>
                         <th>Quantità (tonnellate)</th>
-                        <th>Classificazione</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Energia elettrica acquistata</td><td class="val">11.448 GJ</td><td>Nel testo narrativo: 11.448,80 GJ</td></tr>
+                    <tr><td>150106</td><td>Imballaggi misti</td><td class="val">65,05</td></tr>
+                    <tr><td>150103</td><td>Imballaggi in legno</td><td class="val">40,58</td></tr>
+                    <tr><td>170405</td><td>Ferro</td><td class="val">17,25</td></tr>
+                    <tr><td>150102</td><td>Plastica</td><td class="val">6,64</td></tr>
+                    <tr><td>150101</td><td>Carta</td><td class="val">3,56</td></tr>
+                    <tr><td>170904*</td><td>Rifiuti misti da demolizione</td><td class="val">3,32</td></tr>
+                    <tr><td>160708*</td><td>Rifiuti contenenti olio</td><td class="val">2,6</td></tr>
+                    <tr><td>020108*</td><td>Rifiuti agrochimici contenenti sostanze pericolose</td><td class="val">2</td></tr>
+                    <tr><td>160601*</td><td>Batterie al piombo</td><td class="val">0,6</td></tr>
+                    <tr><td>130205*</td><td>Scarti di olio minerale</td><td class="val">0,5</td></tr>
+                    <tr><td>020304</td><td>Scarti da trasformazione</td><td class="val">0,58</td></tr>
+                    <tr><td>160107*</td><td>Filtri dell'olio</td><td class="val">0,09</td></tr>
+                    <tr><td>140603*</td><td>Altri solventi e miscele</td><td class="val">0,09</td></tr>
+                    <tr><td>130105*</td><td>Emulsioni</td><td class="val">0,08</td></tr>
+                    <tr><td>080318</td><td>Toner per stampa</td><td class="val">0,01</td></tr>
+                    <tr class="highlight-row"><td colspan="2"><strong>Totale rifiuti</strong></td><td class="val"><strong>142,94</strong></td></tr>
+                    <tr class="highlight-row"><td colspan="2"><strong>Totale pericolosi</strong></td><td class="val"><strong>5,96</strong></td></tr>
+                    <tr class="highlight-row"><td colspan="2"><strong>Totale non pericolosi</strong></td><td class="val"><strong>136,97</strong></td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p class="source-note">Il report contrassegna 170904* con asterisco, ma il totale dei rifiuti pericolosi di 5,96 t coincide con la somma delle altre voci contrassegnate, senza includere i 3,32 t di 170904*. La classificazione e i totali sono riportati come pubblicati nel report.</p>
+
+            <div class="table-scroll">
+            <table class="kpi-table" style="margin-top:20px">
+                <thead>
+                    <tr>
+                        <th>Consumi energetici (2023, tabella GRI)</th>
+                        <th>Consumo</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Energia elettrica acquistata</td><td class="val">11.448 GJ</td><td>Valore nominale nel report: 11.448,80 GJ</td></tr>
                     <tr><td>Gas metano</td><td class="val">16.986 GJ</td><td>Uso descritto in modo diverso nelle sezioni del report</td></tr>
                     <tr><td>GPL</td><td class="val">5.728 GJ</td><td>Uso descritto in modo diverso nelle sezioni del report</td></tr>
                     <tr class="highlight-row"><td>Totale consumi energetici</td><td class="val">34.162 GJ</td><td>Valore pubblicato</td></tr>
@@ -302,6 +429,7 @@
                 </tbody>
             </table>
             </div>
+            <p class="source-note">La sezione narrativa (p. 38) associa metano e GPL alla produzione e agli essiccatoi del mais; l'appendice GRI (p. 61) li descrive come consumi per veicoli aziendali. Il testo narrativo indica inoltre il 2,6% di energia autoprodotta da fonti rinnovabili: non è lo stesso dato dell'energia rinnovabile certificata acquistata, per cui la tabella GRI riporta un trattino.</p>
 
             <div class="table-scroll">
             <table class="kpi-table" style="margin-top:20px">
@@ -317,7 +445,7 @@
                         <td class="val">&gt; 200 mezzi</td>
                     </tr>
                     <tr>
-                        <td>Operatori logistici esterni</td>
+                        <td>Operatori logistici impiegati nei trasporti</td>
                         <td class="val">9</td>
                     </tr>
                     <tr>
@@ -325,13 +453,13 @@
                         <td class="val">60 (Piemonte, Liguria, Valle d'Aosta)</td>
                     </tr>
                     <tr>
-                        <td>Poli logistici principali</td>
+                        <td>Poli logistici principali (stock)</td>
                         <td class="val">Fossano (CN) + Cuneo</td>
                     </tr>
                 </tbody>
             </table>
             </div>
-            <p class="source-note">Fonte: GRI 306 – Rifiuti; GRI 302 – Energia. Bilancio di Sostenibilità CAP Nord Ovest 2024.</p>
+            <p class="source-note">Fonte: GRI 306 – Rifiuti; GRI 302 – Energia; sezione logistica e trasporti. Bilancio di Sostenibilità CAP Nord Ovest 2024, pp. 38–40 e appendice GRI, p. 61.</p>
         </div>
     </section>
 
@@ -347,12 +475,13 @@
             <table class="kpi-table">
                 <thead>
                     <tr>
-                        <th colspan="3">Composizione del personale al 31/12/2023</th>
+                        <th colspan="4">Dipendenti al 31/12/2023</th>
                     </tr>
                     <tr>
                         <th>Categoria</th>
                         <th>Uomini</th>
                         <th>Donne</th>
+                        <th>Totale</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -360,34 +489,42 @@
                         <td>Dipendenti totali</td>
                         <td class="val">76</td>
                         <td class="val">31</td>
+                        <td class="val">107</td>
                     </tr>
                     <tr>
-                        <td>Tempo indeterminato (full-time)</td>
+                        <td>&nbsp;&nbsp;&nbsp;↳ Tempo indeterminato</td>
                         <td>67</td>
                         <td>31</td>
+                        <td>98</td>
                     </tr>
                     <tr>
-                        <td>Tempo determinato</td>
+                        <td>&nbsp;&nbsp;&nbsp;↳ Tempo determinato</td>
                         <td>9</td>
                         <td>0</td>
+                        <td>9</td>
                     </tr>
                     <tr>
-                        <td>Part-time a tempo indeterminato</td>
+                        <td>&nbsp;&nbsp;&nbsp;↳ Full-time (a prescindere dal tipo di contratto)</td>
+                        <td>74</td>
+                        <td>20</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;↳Part-time (a prescindere dal tipo di contratto)</td>
                         <td>2</td>
                         <td>11</td>
-                    </tr>
-                    <tr>
-                        <td>Collaboratori esterni (agenti)</td>
-                        <td>60</td>
                         <td>13</td>
                     </tr>
-                    <tr class="highlight-row">
-                        <td>Contratti complessivi (dip. + rappresentanti)</td>
-                        <td colspan="2" class="val" style="text-align:center">180 persone</td>
+                    <tr>
+                        <td>Agenti collaboratori (non dipendenti)</td>
+                        <td>60</td>
+                        <td>13</td>
+                        <td>73</td>
                     </tr>
                 </tbody>
             </table>
             </div>
+            <p class="source-note">Tempo di lavoro e tipo di contratto sono due criteri distinti: i rispettivi conteggi si sovrappongono e non vanno sommati. Gli agenti sono riportati separatamente dai 107 dipendenti.</p>
 
             <div class="table-scroll">
             <table class="kpi-table" style="margin-top:20px">
@@ -402,62 +539,62 @@
                     <tr>
                         <td>Presenza femminile sul totale dipendenti</td>
                         <td class="val">29%</td>
-                        <td>31 donne su 107 dipendenti</td>
+                        <td>Calcolata come 31 ÷ 107 × 100 = 28,97%, arrotondata all'intero più vicino.</td>
                     </tr>
                     <tr>
                         <td>Distribuzione regionale – Piemonte</td>
                         <td class="val">93 dipendenti</td>
-                        <td>87% del totale</td>
+                        <td>Conteggio riportato; quota derivata: 93 ÷ 107 × 100 = 86,92%, arrotondata a 87%.</td>
                     </tr>
                     <tr>
                         <td>Distribuzione regionale – Liguria</td>
                         <td class="val">13 dipendenti</td>
-                        <td>12% del totale</td>
+                        <td>Conteggio riportato; quota derivata: 13 ÷ 107 × 100 = 12,15%, arrotondata a 12%.</td>
                     </tr>
                     <tr>
                         <td>Distribuzione regionale – Valle d'Aosta</td>
                         <td class="val">1 dipendente</td>
-                        <td>1% del totale</td>
+                        <td>Conteggio riportato; quota derivata: 1 ÷ 107 × 100 = 0,93%, arrotondata a 1%.</td>
                     </tr>
                     <tr>
                         <td>Fascia d'età: under 30</td>
                         <td class="val">12%</td>
-                        <td>~13 persone</td>
+                        <td>Quota GRI 12,1%, visualizzata come 12%; ~13 persone stimate applicando 12,1% a 107 dipendenti.</td>
                     </tr>
                     <tr>
                         <td>Fascia d'età: 30–50 anni</td>
                         <td class="val">44%</td>
-                        <td>~47 persone</td>
+                        <td>Quota GRI 43,9%, visualizzata come 44%; ~47 persone stimate applicando 43,9% a 107 dipendenti.</td>
                     </tr>
                     <tr>
                         <td>Fascia d'età: over 50</td>
                         <td class="val">44%</td>
-                        <td>~47 persone</td>
+                        <td>Quota GRI 44%, riportata senza decimali; ~47 persone stimate applicando la quota a 107 dipendenti.</td>
                     </tr>
                     <tr>
                         <td>Categorie: Operai</td>
                         <td class="val">23% (25 persone)</td>
-                        <td>Solo uomini</td>
+                        <td>25 uomini, 0 donne (conteggi del report). Quota ricalcolata: 25 ÷ 107 × 100 = 23,36%, arrotondata a 23%.</td>
                     </tr>
                     <tr>
                         <td>Categorie: Impiegati</td>
                         <td class="val">69% (74 persone)</td>
-                        <td>46 uomini, 28 donne</td>
+                        <td>46 uomini + 28 donne = 74 (conteggi del report). Quota ricalcolata: 74 ÷ 107 × 100 = 69,16%, arrotondata a 69%.</td>
                     </tr>
                     <tr>
                         <td>Categorie: Quadri e dirigenti</td>
-                        <td class="val">11% (8 persone)</td>
-                        <td>5 uomini, 3 donne</td>
+                        <td class="val">7,5% (8 persone)</td>
+                        <td>5 uomini + 3 donne = 8 (conteggi del report). Quota ricalcolata: 8 ÷ 107 × 100 = 7,48%, arrotondata a 7,5%. Il report indica 11%, valore non coerente con il conteggio.</td>
                     </tr>
                     <tr>
                         <td>Turnover in uscita</td>
                         <td class="val">16%</td>
-                        <td>17 persone</td>
+                        <td>Percentuale e 17 persone riportate dal report; il denominatore/metodo di calcolo non è specificato nella tabella fonte e non viene ricostruito.</td>
                     </tr>
                     <tr>
                         <td>Turnover in entrata</td>
                         <td class="val">15%</td>
-                        <td>16 persone</td>
+                        <td>Percentuale e 16 persone riportate dal report; il denominatore/metodo di calcolo non è specificato nella tabella fonte e non viene ricostruito.</td>
                     </tr>
                     <tr>
                         <td>Dipendenti appartenenti a categorie protette</td>
@@ -467,12 +604,22 @@
                     <tr>
                         <td>Congedo parentale usufruito</td>
                         <td class="val">1 persona</td>
-                        <td>100% rientrati al lavoro</td>
+                        <td>Il report non fornisce il tasso di rientro per il solo 2023.</td>
                     </tr>
                     <tr class="highlight-row">
-                        <td>Infortuni gravi sul lavoro</td>
+                        <td>Infortuni sul lavoro (totale)</td>
+                        <td class="val">1</td>
+                        <td>1 non grave; 0 con gravi conseguenze e 0 fatali.</td>
+                    </tr>
+                    <tr>
+                        <td>Ore lavorate dai dipendenti</td>
+                        <td class="val">203.300</td>
+                        <td>Dato 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Infortuni con gravi conseguenze / fatali</td>
                         <td class="val">0</td>
-                        <td>Nessun decesso o infortunio grave nel 2023</td>
+                        <td>0 gravi e 0 fatali nel 2023</td>
                     </tr>
                     <tr class="highlight-row">
                         <td>Episodi di discriminazione interna</td>
@@ -482,36 +629,37 @@
                 </tbody>
             </table>
             </div>
+            <p class="source-note">Per le categorie professionali, i conteggi sono quelli riportati nel report (p. 44): operai 25 uomini; impiegati 46 uomini e 28 donne; quadri e dirigenti 5 uomini e 3 donne. Le percentuali sono state ricalcolate sul totale di 107 dipendenti: persone della categoria ÷ 107 × 100, con arrotondamento a zero o una cifra decimale. I conteggi 25 + 74 + 8 = 107 riconciliano il totale; le percentuali arrotondate possono non sommare esattamente al 100%. Per quadri e dirigenti, 8 ÷ 107 = 7,48% (7,5%), mentre il report indica 11%: è mantenuto il conteggio e segnalata la discrepanza. Le quote regionali sono derivate nello stesso modo dai conteggi per regione. Le quote per età sono invece quelle GRI (12,1%, 43,9%, 44%); le quantità di persone indicate con “~” sono stime ottenute applicando tali quote a 107, non conteggi pubblicati. I tassi di turnover sono trascritti dal report, senza ricostruire un denominatore non specificato.</p>
 
             <div class="table-scroll">
             <table class="kpi-table" style="margin-top:20px">
                 <thead>
                     <tr>
-                        <th>Ore di formazione per categoria (2023)</th>
-                        <th>Ore erogate</th>
+                        <th>Percorso formativo descritto nel report</th>
+                        <th>Ore totali di formazione</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Categoria 1 (dirigenti / quadri)</td>
-                        <td class="val">112 ore</td>
-                    </tr>
-                    <tr>
-                        <td>Categoria 2 (impiegati)</td>
-                        <td class="val">414 ore</td>
-                    </tr>
-                    <tr>
-                        <td>Responsabili di settore</td>
-                        <td class="val">256 ore</td>
-                    </tr>
-                    <tr class="highlight-row">
-                        <td>Investimento totale in formazione</td>
-                        <td class="val">42.961 €</td>
-                    </tr>
+                    <tr><td>Responsabili di area</td><td class="val">256</td></tr>
+                    <tr><td>Tecnici commerciali</td><td class="val">414</td></tr>
+                    <tr><td>Responsabili di settore</td><td class="val">112</td></tr>
                 </tbody>
             </table>
             </div>
-            <p class="source-note">Fonte: GRI 2-7, GRI 401, GRI 403, GRI 404. Bilancio di Sostenibilità CAP Nord Ovest 2024.</p>
+            <p class="source-note">Queste ore si riferiscono ai tre percorsi formativi descritti nel report (p. 44), non a un totale annuale né a una ripartizione delle ore per categoria di dipendenti. Il report non fornisce il totale delle ore erogate nel 2023 distinto per categoria. La spesa per la formazione è 40.417 € nel 2022 e 42.961 € nel 2023.</p>
+
+            <div class="table-scroll">
+            <table class="kpi-table" style="margin-top:20px">
+                <thead><tr><th>Categoria di dipendenti (GRI 404-1, 2023)</th><th>Ore di formazione medie per categoria professionale</th></tr></thead>
+                <tbody>
+                    <tr><td>Quadri e dirigenti</td><td class="val">68</td></tr>
+                    <tr><td>Impiegati</td><td class="val">18</td></tr>
+                    <tr><td>Operai</td><td class="val">4</td></tr>
+                    <tr class="highlight-row"><td>Totale riportato dal report</td><td class="val">91</td></tr>
+                </tbody>
+            </table>
+            </div>
+            <p class="source-note">La tabella GRI riporta i valori sopra indicati; le somme delle categorie (68 + 18 + 4 = 90) non coincidono con il totale pubblicato (91). Il report riporta inoltre, nella riga quadri/dirigenti, 26 ore per gli uomini e 43 per le donne, la cui somma (69) non coincide con il totale di riga 68. Le discrepanze sono segnalate senza ricalcolare i valori ufficiali. Fonte: GRI 2-7, 2-8, 401-1, 401-3, 403-9, 404-1, 405-1, 406-1. Bilancio di Sostenibilità CAP Nord Ovest 2024, pp. 44–49 e appendice GRI, pp. 60–61.</p>
         </div>
     </section>
 
@@ -551,7 +699,7 @@
                     <tr>
                         <td>Collegio Sindacale</td>
                         <td class="val">3 titolari + 2 supplenti</td>
-                        <td>Revisione: Deloitte &amp; Touche Spa (2023–2025)</td>
+                        <td>Deloitte incaricata fino all'approvazione del bilancio 2025</td>
                     </tr>
                     <tr>
                         <td>Organismo di Vigilanza (O.d.V.)</td>
@@ -565,13 +713,13 @@
                     </tr>
                     <tr>
                         <td>Codice Etico</td>
-                        <td class="val">✔ Rinnovato nel 2023</td>
+                        <td class="val">Aggiornato il 7 novembre 2023</td>
                         <td>–</td>
                     </tr>
                     <tr>
                         <td>Modello 231 (D.Lgs. 231/2001)</td>
-                        <td class="val">✔ In vigore</td>
-                        <td>Include politica anticorruzione</td>
+                        <td class="val">Aggiornato il 13 dicembre 2023</td>
+                        <td>Modello di organizzazione, gestione e controllo</td>
                     </tr>
                     <tr class="highlight-row">
                         <td>Certificazione ISO 22005:2008</td>
@@ -580,125 +728,159 @@
                     </tr>
                     <tr class="highlight-row">
                         <td>Certificazione ISO 45001</td>
-                        <td class="val">✔ Gen 2024</td>
-                        <td>Salute e sicurezza sul lavoro – scadenza gen 2027</td>
+                        <td class="val">24 gennaio 2024</td>
+                        <td>Salute e sicurezza sul lavoro; scadenza 23 gennaio 2027</td>
                     </tr>
                     <tr class="highlight-row">
                         <td>Certificazione UNI/PdR 125:2022</td>
-                        <td class="val">✔ Dic 2023</td>
-                        <td>Parità di genere</td>
+                        <td class="val">Conseguita nel 2023</td>
+                        <td>Il report non specifica il giorno o il mese</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td>Rating di legalità</td>
+                        <td class="val">★★+ (26 settembre 2023)</td>
+                        <td>Rating, rilasciato dall'Autorità Garante per la Concorrenza e il Mercato
+</td>
                     </tr>
                     <tr>
                         <td>Categorie di stakeholder mappate</td>
                         <td class="val">9</td>
-                        <td>Dipendenti, clienti, agricoltori, fornitori, istituti bancari, ecc.</td>
+                        <td>Dipendenti e agenti; soci; clienti; agricoltori e imprese agricole; istituti bancari; scuole e centri di ricerca e innovazione; fornitori e distributori; associazioni di categoria; territorio e ambiente.</td>
                     </tr>
                     <tr>
                         <td>Bilancio di Sostenibilità pubblicato</td>
                         <td class="val">✔ Primo nel 2024</td>
-                        <td>Anticipazione volontaria degli obblighi UE</td>
+                        <td>Il report non documenta un'anticipazione volontaria degli obblighi CSRD</td>
                     </tr>
                 </tbody>
             </table>
             </div>
-            <p class="source-note">Fonte: GRI 2-9, GRI 2-10, GRI 205, GRI 418. Bilancio di Sostenibilità CAP Nord Ovest 2024.</p>
+            <p class="source-note">Il report presenta le ISO 22005:2008 e UNI/PdR 125:2022 tra le certificazioni del 2023, ma colloca il conseguimento della ISO 45001 al 24 gennaio 2024 (pp. 30–31); si mantiene la data puntuale indicata nella sezione dedicata. Fonte: Bilancio di Sostenibilità CAP Nord Ovest 2024, pp. 17–18, 22–31.</p>
         </div>
     </section>
 
     <!-- Stime e proiezioni, distinte dai dati consuntivi. -->
     <section class="section">
         <h2>📈 Stime e proiezioni 2024–2025</h2>
-        <p class="subtitle">
-            Elaborazioni basate sui trend 2022→2023 del Bilancio di Sostenibilità 2024 e sulle tendenze del settore agroalimentare cooperativo italiano.
-        </p>
+        <p class="estimate-intro">Sono scenari didattici, non previsioni aziendali: ogni scheda esplicita l'ipotesi applicata. Due soli anni non dimostrano un trend stabile. <a href="metodologia.html">Come si calcolano</a>.</p>
 
+        <h3 class="estimate-group-title">Come può crescere il valore economico generato?</h3>
+        <article class="estimate-box estimate-growth-card">
+            <div class="estimate-growth-heading">
+                <div>
+                    <h4 class="est-label">Scenario illustrativo di crescita</h4>
+                    <p class="est-note">Il valore GRI 201-1 deriva soprattutto dai ricavi generati da prodotti e servizi. Per aumentarlo, CAP Nord Ovest può creare più valore per le aziende agricole e tradurlo in maggiori vendite, volumi o servizi.</p>
+                </div>
+                <span class="estimate-status status-scenario">Ipotesi: +1% annuo</span>
+            </div>
+            <div class="estimate-growth-layout">
+                <div class="estimate-growth-scenario">
+                    <h5>Proiezione con crescita composta dell'1%</h5>
+                    <div class="estimate-values estimate-growth-values">
+                        <div><span>Consuntivo 2023</span><strong>264,84 M€</strong></div>
+                        <div class="estimate-projection"><span>Scenario 2024</span><strong>267,49 M€</strong></div>
+                        <div class="estimate-projection"><span>Scenario 2025</span><strong>270,17 M€</strong></div>
+                    </div>
+                    <p class="estimate-change"><strong>Incremento rispetto al 2023</strong><span>2024: +2,65 M€ · 2025: +5,32 M€</span></p>
+                    <p class="est-note">Calcolo: 264,84 M€ × 1,01 per il 2024; il risultato × 1,01 per il 2025. L'1% è un'ipotesi didattica, non un tasso previsto dal report.</p>
+                </div>
+                <div class="estimate-growth-levers">
+                    <h5>Leve di crescita coerenti con il report</h5>
+                    <ul>
+                        <li><strong>Sviluppare servizi di precision farming:</strong> usare dati Sentinel, Cropwise-Farmshots e Agrigenius per affiancare le decisioni in campo.</li>
+                        <li><strong>Ampliare le soluzioni a maggior valore:</strong> promuovere irrigazione localizzata, fertirrigazione, biostimolanti e protezioni per vigne e frutteti.</li>
+                        <li><strong>Rafforzare la relazione con i soci:</strong> rispondere ai bisogni delle singole aziende agricole con consulenza e proposte mirate, favorendo continuità e volumi di scambio.</li>
+                    </ul>
+                    <p class="est-note">Sono possibili leve operative, non risultati già misurati. Il calo di alcune voci d'investimento nel 2023 non causa automaticamente un aumento dei ricavi: da solo, il contenimento dei costi può incidere sul valore trattenuto, non sul valore generato.</p>
+                </div>
+            </div>
+            <p class="estimate-investment-context"><strong>Contesto 2022–2023</strong><span>Voci d'investimento confrontabili: 908.417 € → 395.961 € (−56,4%)</span><small>Somma delle voci con entrambi gli anni riportati; R&amp;S esclusa perché il dato 2023 manca. È un dato da considerare, non la base matematica della crescita ipotizzata.</small></p>
+            <span class="estimate-status status-scenario">Scenario, non previsione aziendale</span>
+        </article>
+
+        <h3 class="estimate-group-title">Estrapolazioni del tasso 2022–2023</h3>
         <div class="estimate-grid">
-
-            <div class="estimate-box">
-                <div class="est-label">Fatturato stimato 2024</div>
-                <div class="est-value">~263–266 M€</div>
-                <div class="est-note">
-                    Sostanziale stabilità rispetto al 2023 (264,8 M€).
-                    Leggera variabilità legata all'andamento dei cereali.
-                    <span class="trend-stable">▶ Stabile</span>
+            <article class="estimate-box">
+                <h4 class="est-label">Remunerazione del personale</h4>
+                <div class="estimate-values">
+                    <div><span>2022</span><strong>5,90 M€</strong></div>
+                    <div><span>2023</span><strong>6,25 M€</strong></div>
+                    <div class="estimate-projection"><span>2024 stimato</span><strong>6,61 M€</strong></div>
+                    <div class="estimate-projection"><span>2025 stimato</span><strong>7,00 M€</strong></div>
                 </div>
-            </div>
+                <p class="estimate-change"><strong>Variazione 2022–23</strong><span>+344.296 € · +5,83%</span></p>
+                <p class="est-note">L'estrapolazione applica ogni anno lo stesso tasso annuo composto (+5,83%).</p>
+                <span class="estimate-status status-projection">Estrapolazione didattica</span>
+            </article>
 
-            <div class="estimate-box">
-                <div class="est-label">Costo del personale 2024</div>
-                <div class="est-value">~6,6 M€</div>
-                <div class="est-note">
-                    Crescita attesa del +5–6% in linea con il trend 2022→2023
-                    (+5,8%). Contratti rinnovati e incrementi CCNL.
-                    <span class="trend-up">▲ In crescita</span>
+            <article class="estimate-box">
+                <h4 class="est-label">Spesa per la formazione</h4>
+                <div class="estimate-values">
+                    <div><span>2022</span><strong>40.417 €</strong></div>
+                    <div><span>2023</span><strong>42.961 €</strong></div>
+                    <div class="estimate-projection"><span>2024 stimato</span><strong>45.665 €</strong></div>
+                    <div class="estimate-projection"><span>2025 stimato</span><strong>48.539 €</strong></div>
                 </div>
-            </div>
-
-            <div class="estimate-box">
-                <div class="est-label">Investimento in formazione 2024</div>
-                <div class="est-value">~45.000–47.000 €</div>
-                <div class="est-note">
-                    Proiezione basata sul trend +6,3% (2022: 40.417€ → 2023: 42.961€).
-                    Aggiornamenti CSRD e sicurezza ISO 45001.
-                    <span class="trend-up">▲ In crescita</span>
-                </div>
-            </div>
-
-            <div class="estimate-box">
-                <div class="est-label">Rifiuti pericolosi 2024</div>
-                <div class="est-value">~5,3–5,7 ton</div>
-                <div class="est-note">
-                    Obiettivo di riduzione del 5–10% rispetto alle 5,96 ton del 2023
-                    grazie a processi di gestione migliorati e ISO 45001.
-                    <span class="trend-down">▼ In riduzione</span>
-                </div>
-            </div>
-
-            <div class="estimate-box">
-                <div class="est-label">Presenza femminile target</div>
-                <div class="est-value">≥ 33%</div>
-                <div class="est-note">
-                    Obiettivo derivato dalla Certificazione UNI/PdR 125:2022
-                    (parità di genere). Valore 2023: 29%.
-                    <span class="trend-up">▲ Obiettivo 2025</span>
-                </div>
-            </div>
-
-            <div class="estimate-box">
-                <div class="est-label">Prima rendicontazione CSRD</div>
-                <div class="est-value">2025</div>
-                <div class="est-note">
-                    CAP Nord Ovest dovrà conformarsi alla CSRD (Corporate Sustainability
-                    Reporting Directive) per le PMI a partire dall'esercizio 2025.
-                    <span class="trend-stable">📋 Scadenza normativa</span>
-                </div>
-            </div>
-
-            <div class="estimate-box">
-                <div class="est-label">Rifiuti totali 2024</div>
-                <div class="est-value">~135–140 ton</div>
-                <div class="est-note">
-                    Proiezione di lieve riduzione rispetto alle 142,94 ton del 2023,
-                    grazie all'ottimizzazione degli imballaggi e della logistica.
-                    <span class="trend-down">▼ In riduzione</span>
-                </div>
-            </div>
-
-            <div class="estimate-box">
-                <div class="est-label">Ore di formazione stimate 2024</div>
-                <div class="est-value">&gt; 850 ore</div>
-                <div class="est-note">
-                    Incremento rispetto alle 782 ore del 2023 (112+414+256),
-                    con nuovi moduli obbligatori su sicurezza e sostenibilità.
-                    <span class="trend-up">▲ In crescita</span>
-                </div>
-            </div>
-
+                <p class="estimate-change"><strong>Variazione 2022–23</strong><span>+2.544 € · +6,29%</span></p>
+                <p class="est-note">L'estrapolazione applica ogni anno lo stesso tasso annuo composto (+6,29%).</p>
+                <span class="estimate-status status-projection">Estrapolazione didattica</span>
+            </article>
         </div>
 
+        <h3 class="estimate-group-title">Scenari e dati non proiettabili</h3>
+        <div class="estimate-grid">
+            <article class="estimate-box">
+                <h4 class="est-label">Rifiuti pericolosi · scenario ipotetico</h4>
+                <p class="estimate-baseline"><span>Dato 2023</span><strong>5,96 t</strong></p>
+                <div class="estimate-scenarios">
+                    <div><span>Ipotesi −5%</span><strong>5,66 t</strong></div>
+                    <div><span>Ipotesi −10%</span><strong>5,36 t</strong></div>
+                </div>
+                <p class="est-note">Calcolo: 5,96 × 0,95 oppure 5,96 × 0,90. Le ipotesi sono scenari di sensibilità, non obiettivi o trend osservati.</p>
+                <span class="estimate-status status-scenario">Scenario, non previsione</span>
+            </article>
+
+            <article class="estimate-box">
+                <h4 class="est-label">Presenza femminile · soglia illustrativa</h4>
+                <div class="estimate-scenarios">
+                    <div><span>Situazione 2023</span><strong>31 / 107 · 28,97%</strong></div>
+                    <div><span>Per raggiungere il 33%</span><strong>36 / 107 · 33,64%</strong></div>
+                </div>
+                <p class="est-note">A organico invariato servirebbero 5 donne in più: 107 × 33% = 35,31, arrotondato per eccesso a 36 persone. Il 33% non è un target del report.</p>
+                <span class="estimate-status status-scenario">Calcolo aritmetico, non target</span>
+            </article>
+
+            <article class="estimate-box">
+                <h4 class="est-label">Valore economico trattenuto · consuntivo</h4>
+                <div class="estimate-scenarios">
+                    <div><span>2022</span><strong>+4.068.231 €</strong></div>
+                    <div><span>2023</span><strong>−151.857 €</strong></div>
+                </div>
+                <p class="estimate-change"><strong>Variazione</strong><span>−4.220.088 € · −103,7%</span></p>
+                <p class="est-note">Il passaggio da positivo a negativo rende non significativa un'estrapolazione percentuale.</p>
+                <span class="estimate-status status-data">Dato consuntivo, non proiezione</span>
+            </article>
+
+            <article class="estimate-box">
+                <h4 class="est-label">Rifiuti totali · dato disponibile</h4>
+                <p class="estimate-baseline"><span>2023</span><strong>142,94 t</strong></p>
+                <p class="est-note">Manca un secondo valore annuale per calcolare una variazione.</p>
+                <span class="estimate-status status-data">Serie storica insufficiente</span>
+            </article>
+
+            <article class="estimate-box">
+                <h4 class="est-label">Ore dei percorsi formativi · non annualizzabili</h4>
+                <dl class="estimate-hours">
+                    <div><dt>Responsabili di area</dt><dd>256 h</dd></div>
+                    <div><dt>Tecnici commerciali</dt><dd>414 h</dd></div>
+                    <div><dt>Responsabili di settore</dt><dd>112 h</dd></div>
+                </dl>
+                <p class="est-note">Sono tre percorsi mirati, non il totale annuo: non si usano per proiettare le ore future. Medie GRI per dipendente: quadri/dirigenti 68 h, impiegati 18 h, operai 4 h.</p>
+                <span class="estimate-status status-data">Non proiettabile</span>
+            </article>
+        </div>
         <p class="estimate-disclaimer">
-            ⚠️ Le stime riportate sono elaborazioni a scopo didattico, basate sui dati del Bilancio di Sostenibilità 2024
-            e su trend di settore. Non costituiscono previsioni ufficiali di CAP Nord Ovest.
+            Nota: tutte le stime e le soglie illustrative sono elaborazioni didattiche sui dati pubblicati; non sono previsioni ufficiali, obiettivi aziendali o intervalli di confidenza.
         </p>
     </section>
 
