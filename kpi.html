@@ -11,7 +11,7 @@
     <title>KPI ESG - CAP Nord Ovest</title>
     <!-- rel=preload anticipa il download dell'immagine principale; as e fetchpriority indicano
          al browser il tipo di risorsa e l'alta priorità. Il foglio CSS definisce il layout comune. -->
-    <link rel="preload" as="image" href="img/cap-kpi.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="img/cap-kpi.webp" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -45,10 +45,12 @@
         </nav>
     </header>
 
+    <!-- Landmark principale della pagina per la navigazione con screen reader. -->
+    <main id="contenuto-principale">
     <!-- Hero: titolo e contesto temporale della pagina. alt descrive l'immagine a chi non la vede;
          fetchpriority prioritizza la risorsa e decoding=async evita di bloccare il rendering del testo. -->
     <section class="hero-img">
-        <img src="img/cap-kpi.jpg" alt="Dashboard digitale con grafici e indicatori di performance" fetchpriority="high" decoding="async">
+        <img src="img/cap-kpi.webp" alt="Dashboard digitale con grafici e indicatori di performance" fetchpriority="high" decoding="async">
         <h2>KPI ESG</h2>
         <p>Indicatori chiave di performance ambientale, sociale e di governance – esercizio 2023</p>
     </section>
@@ -192,31 +194,31 @@
             </div>
             <div class="chart-card">
                 <h3>Stakeholder coinvolti</h3>
-                <div class="stakeholder-tree" role="tree" aria-label="Nove categorie di stakeholder, raggruppate per ambito">
-                <div class="stakeholder-root" role="treeitem" aria-level="1">Stakeholder mappati <strong>9 categorie</strong></div>
-                <div class="stakeholder-branches" role="group">
+                <div class="stakeholder-tree">
+                <div class="stakeholder-root">Stakeholder mappati <strong>9 categorie</strong></div>
+                <div class="stakeholder-branches">
                     <div class="stakeholder-branch">
                         <h4>Interni</h4>
-                        <ul role="group">
-                            <li role="treeitem" aria-level="2">Dipendenti e agenti</li>
-                            <li role="treeitem" aria-level="2">Soci</li>
+                        <ul>
+                            <li>Dipendenti e agenti</li>
+                            <li>Soci</li>
                         </ul>
                     </div>
                     <div class="stakeholder-branch">
                         <h4>Filiera e relazioni</h4>
-                        <ul role="group">
-                            <li role="treeitem" aria-level="2">Clienti</li>
-                            <li role="treeitem" aria-level="2">Agricoltori e imprese agricole</li>
-                            <li role="treeitem" aria-level="2">Fornitori e distributori</li>
-                            <li role="treeitem" aria-level="2">Istituti bancari</li>
+                        <ul>
+                            <li>Clienti</li>
+                            <li>Agricoltori e imprese agricole</li>
+                            <li>Fornitori e distributori</li>
+                            <li>Istituti bancari</li>
                         </ul>
                     </div>
                     <div class="stakeholder-branch">
                         <h4>Conoscenza e territorio</h4>
-                        <ul role="group">
-                            <li role="treeitem" aria-level="2">Scuole, ricerca e innovazione</li>
-                            <li role="treeitem" aria-level="2">Associazioni di categoria</li>
-                            <li role="treeitem" aria-level="2">Territorio e ambiente</li>
+                        <ul>
+                            <li>Scuole, ricerca e innovazione</li>
+                            <li>Associazioni di categoria</li>
+                            <li>Territorio e ambiente</li>
                         </ul>
                     </div>
                 </div>
@@ -907,6 +909,7 @@
         </p>
     </section>
 
+    </main>
     <!-- Chiusura comune della pagina. -->
     <footer class="footer">
         <p>Project Work - Tecnologia Web per la Sostenibilità d'Impresa</p>

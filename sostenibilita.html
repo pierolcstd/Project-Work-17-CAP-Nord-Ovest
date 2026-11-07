@@ -8,7 +8,7 @@
     <meta name="description" content="Sito web di analisi della sostenibilità d'impresa di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia, basata sul Bilancio di Sostenibilità 2024.">
     <title>Sostenibilità - CAP Nord Ovest</title>
     <!-- Precarica l'immagine hero, elemento visivo principale della pagina. -->
-    <link rel="preload" as="image" href="img/sostenibilita.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="img/sostenibilita.webp" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,10 +36,12 @@
         </nav>
     </header>
 
+    <!-- Landmark principale della pagina per la navigazione con screen reader. -->
+    <main>
     <!-- Hero Sostenibilità: filari di colture in un paesaggio rurale. -->
     <section class="hero-img">
         <!-- L'immagine hero ha priorità alta per favorire il caricamento dell'LCP. -->
-        <img src="img/sostenibilita.jpg" alt="Filari di colture verdi in un campo al tramonto" fetchpriority="high" decoding="async">
+        <img src="img/sostenibilita.webp" alt="Filari di colture verdi in un campo al tramonto" fetchpriority="high" decoding="async">
         <h2>Sostenibilità d'Impresa</h2>
         <p>Ambiente, Persone e Governance al centro delle nostre scelte</p>
     </section>
@@ -155,6 +157,7 @@
         </div>
     </section>
 
+    </main>
     <footer class="footer">
         <p>Project Work - Tecnologia Web per la Sostenibilità d'Impresa</p>
     </footer>

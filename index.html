@@ -8,7 +8,7 @@
     <meta name="description" content="Sito web di analisi della sostenibilità d'impresa di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia, basata sul Bilancio di Sostenibilità 2024.">
     <title>CAP Nord Ovest – Sostenibilità d'Impresa</title>
     <!-- Precarica l'immagine hero, elemento visivo principale della pagina. -->
-    <link rel="preload" as="image" href="img/cap-home.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="img/cap-home.webp" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,11 +37,13 @@
         </nav>
     </header>
 
+    <!-- Landmark principale della pagina per la navigazione con screen reader. -->
+    <main>
     <!-- Hero Home: silos per cereali e coltivazioni. -->
 
     <section class="hero-img">
         <!-- L'immagine hero ha priorità alta per favorire il caricamento dell'LCP. -->
-        <img src="img/cap-home.jpg" alt="Silos per cereali accanto a un campo di mais" fetchpriority="high" decoding="async">
+        <img src="img/cap-home.webp" alt="Silos per cereali accanto a un campo di mais" fetchpriority="high" decoding="async">
         <h2>Sostenibilità d'impresa nel settore agroalimentare</h2>
         <p> Un'analisi delle performance ambientali, sociali e di governance
             di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia,
@@ -162,7 +164,7 @@
     <!-- Immagine di sostenibilità caricata quando si avvicina alla viewport. -->
     <div class="sost-img-wrap">
         <!-- Il caricamento differito riduce il lavoro iniziale della pagina. -->
-        <img src="img/sostenibilita.jpg" alt="Filari di colture verdi in un campo al tramonto" loading="lazy" fetchpriority="low" decoding="async">
+        <img src="img/sostenibilita.webp" alt="Filari di colture verdi in un campo al tramonto" loading="lazy" fetchpriority="low" decoding="async">
     </div>
 
     <!-- Certificazioni del consorzio riportate nel bilancio. -->
@@ -207,6 +209,7 @@
     </section>
 
     <!-- Chiusura della pagina e note del progetto. -->
+    </main>
     <footer class="footer">
         <p>Project Work – Tecnologia Web per la Sostenibilità d'Impresa</p>
     </footer>

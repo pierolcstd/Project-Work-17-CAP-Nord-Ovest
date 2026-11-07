@@ -65,7 +65,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .lollipop-track:after{right:0}
 .scale-marker{position:absolute;top:4px;left:var(--marker-position);width:14px;height:14px;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px var(--chart-scale);transform:translateX(-50%)}
 .range-segment{position:absolute;top:7px;left:var(--range-start);width:var(--range-width);height:8px;border-radius:8px;background:var(--chart-scale)}
-.chart-axis{display:flex;justify-content:space-between;margin:5px 60px 0 78px;color:#777;font-size:0.7em}
+.chart-axis{display:flex;justify-content:space-between;margin:5px 60px 0 78px;color:#666;font-size:0.7em}
 .stakeholder-tree{padding:5px 0 0;text-align:center}
 .stakeholder-root{position:relative;display:grid;gap:2px;width:max-content;max-width:100%;margin:0 auto;padding:10px 16px;border-radius:8px;background:#332288;color:#fff;font-size:0.84em}
 .stakeholder-root strong{font-size:1.05em}
@@ -102,7 +102,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .investment-point{position:absolute;top:1px;left:var(--marker-position);width:10px;height:10px;border:2px solid #fff;border-radius:50%;background:var(--chart-scale);box-shadow:0 0 0 1px var(--chart-scale);transform:translateX(-50%)}
 .investment-point.year-2023{border:2px solid var(--chart-scale);background:#fff}
 .investment-value{font-size:0.7em;color:#555}
-.investment-missing{grid-column:2/4;color:#777;font-size:0.7em;font-style:italic}
+.investment-missing{grid-column:2/4;color:#666;font-size:0.7em;font-style:italic}
 .investment-axis{margin:4px 72px 0 29px}
 /* Griglia responsiva: auto-fit crea le colonne che entrano, con larghezza minima di 280px. */
 .charts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:24px}
@@ -139,7 +139,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .donut:hover{transform:scale(1.05);filter:drop-shadow(0 3px 4px rgba(27,94,32,0.25))}
 /* Un cerchio bianco interno trasforma il grafico a torta in un anello; Flex centra totale e unità. */
 .donut-hole{width:66px;height:66px;border-radius:50%;background:white;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:bold;color:#1b5e20}
-.donut-hole small{font-size:0.65em;color:#888}
+.donut-hole small{font-size:0.65em;color:#666}
 .donut-hole span{font-size:1.3em;line-height:1.1}
 /* Contenitore flessibile per affiancare il grafico ad anello alla sua legenda. */
 .donut-wrap{display:flex;align-items:center;gap:18px}
@@ -191,7 +191,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .status-projection{background:#e8f5e9;color:#1b5e20}
 .status-scenario{background:#fff5d8;color:#775b08}
 .status-data{background:#eef1f3;color:#4d5961}
-.estimate-disclaimer{font-size:0.88em;color:#777;font-style:italic;margin-top:18px;padding:10px 14px;background:#fff9e6;border-left:4px solid #ffd54f;border-radius:4px}
+.estimate-disclaimer{font-size:0.88em;color:#666;font-style:italic;margin-top:18px;padding:10px 14px;background:#fff9e6;border-left:4px solid #ffd54f;border-radius:4px}
 /* ----- Stime / proiezioni ----- */
 /* ----- Sezione stime (kpi.html) ----- */
 .estimate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:14px}

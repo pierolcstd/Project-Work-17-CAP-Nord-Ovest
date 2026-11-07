@@ -8,7 +8,7 @@
     <meta name="description" content="Sito web di analisi della sostenibilità d'impresa di CAP Nord Ovest, cooperativa del sistema Consorzi Agrari d'Italia, basata sul Bilancio di Sostenibilità 2024.">
     <title>Chi siamo - CAP Nord Ovest</title>
     <!-- Precarica l'immagine hero, elemento visivo principale della pagina. -->
-    <link rel="preload" as="image" href="img/filiera.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="img/filiera.webp" fetchpriority="high">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,10 +36,12 @@
         </nav>
     </header>
 
+    <!-- Landmark principale della pagina per la navigazione con screen reader. -->
+    <main>
     <!-- Hero Chi siamo: attività agricola e filiera del consorzio. -->
     <section class="hero-img">
         <!-- L'immagine hero ha priorità alta per favorire il caricamento dell'LCP. -->
-        <img src="img/filiera.jpg" alt="Agricoltrice al lavoro durante la raccolta del riso" fetchpriority="high" decoding="async">
+        <img src="img/filiera.webp" alt="Agricoltrice al lavoro durante la raccolta del riso" fetchpriority="high" decoding="async">
         <h2>Chi siamo</h2>
         <p>CAP Nord Ovest – parte del sistema Consorzi Agrari d'Italia</p>
     </section>
@@ -104,6 +106,7 @@
         </p>
     </section>
 
+    </main>
     <footer class="footer">
         <p>Project Work - Tecnologia Web per la Sostenibilità d'Impresa</p>
     </footer>
