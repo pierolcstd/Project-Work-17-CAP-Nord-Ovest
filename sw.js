@@ -5,6 +5,8 @@
 // se la rete non è disponibile, restituisce la copia in cache, se presente.
 // L'aggiornamento avviene quindi alla successiva richiesta dell'immagine, ad
 // esempio ricaricando o riaprendo la pagina, non mentre la pagina è ferma.
+// main.js registra questo worker; activate elimina le vecchie cache del progetto,
+// mentre fetch applica la strategia solo alle immagini richieste dalle pagine.
 var CACHE_NAME = 'cap-nord-images-v1';
 // Espressione regolare che riconosce le estensioni delle immagini ammesse.
 var IMAGE_ASSET = /\.(?:avif|gif|jpe?g|png|svg|webp)$/i;

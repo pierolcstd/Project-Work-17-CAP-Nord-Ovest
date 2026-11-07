@@ -1,21 +1,12 @@
 /* =========================================================
    style.css – Foglio di stile unico per tutto il sito
+
+   Le regole di base associano selettori di classe agli elementi HTML (per
+   esempio .charts-grid, .kpi-table e .menu). Le classi descrivono il ruolo
+   visivo dei blocchi; le media query, più avanti, sovrascrivono solo le
+   proprietà necessarie alle diverse larghezze e alle preferenze di movimento.
    ========================================================= */
 .archive-note{font-size:0.9em;color:#666;margin-top:28px;padding:12px 16px;background:#f4f7f2;border-radius:8px}
-/* Barre impilate verticalmente; ogni riga accosta etichetta, traccia e riempimento percentuale. */
-.bar-chart{display:flex;flex-direction:column;gap:10px}
-/* La larghezza inline definisce il valore; box-sizing include testo e padding nelle misure percentuali. */
-.bar-fill{height:100%;background:#2e7d32;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:clamp(0.7em,1.8vw,0.8em);font-weight:bold;min-width:max-content;box-sizing:border-box;white-space:nowrap}
-.bar-fill.accent{background:#66bb6a}
-.bar-fill.alt{background:#388e3c}
-.bar-fill.alt2{background:#43a047}
-.bar-fill.dark{background:#1b5e20}
-.bar-fill.warn{background:#e57373}
-.bar-name{min-width:96px;color:#555;text-align:right;flex-shrink:0;line-height:1.2}
-/* Barre orizzontali */
-.bar-row{display:flex;align-items:center;gap:8px;font-size:0.85em}
-/* Traccia della barra: il riempimento figlio può occupare una quota della larghezza disponibile. */
-.bar-track{flex:1;background:#e8f5e9;border-radius:4px;height:24px;overflow:hidden}
 /* ----- Base ----- */
 body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;color:#222;line-height:1.6;overflow-x:hidden}
 .btn-outline{display:inline-block;background:white;color:#2e7d32;border:2px solid #2e7d32;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold}
@@ -31,16 +22,17 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 /* ----- Strip certificazioni (index.html) ----- */
 .cert-strip{background-color:#1b5e20;color:#fff;padding:36px 12%;display:flex;align-items:center;gap:50px;flex-wrap:wrap}
 .cert-strip .cert-label{font-size:0.78em;letter-spacing:0.1em;text-transform:uppercase;color:#fff;min-width:150px}
-/* ----- Grafici ESG – griglia ----- */
+/* ----- Grafici ESG – griglia e componenti -----
+   Queste classi compongono le card e le legende dei grafici in kpi.html.
+   I valori scale-* impostano variabili colore riutilizzate da swatch e marker;
+   le posizioni quantitative arrivano dalle custom properties inline nel markup
+   (per esempio --marker-position e --range-width), mentre i donut usano il
+   conic-gradient inline per allineare i settori alle percentuali pubblicate.
+*/
 .chart-card{height:100%;box-sizing:border-box;background:white;border-radius:12px;padding:22px 20px 18px;box-shadow:0 4px 10px rgba(0,0,0,0.08)}
 .chart-card h3{color:#1b5e20;margin:0 0 14px 0;font-size:0.97em;border-bottom:2px solid #e8f5e9;padding-bottom:8px}
 .chart-category-title{color:#1b5e20;margin:34px 0 -4px}
 .chart-note{font-size:0.82em;color:#555;line-height:1.45;margin:12px 0 0}
-.scale-key-note{display:flex;align-items:center;gap:10px;color:#555;font-size:0.86em}
-.scale-key-ramp{width:126px;height:12px;border-radius:3px;flex-shrink:0;background:linear-gradient(to right,#56b4e9 0% 11%,#e69f00 11% 22%,#009e73 22% 33%,#d55e00 33% 44%,#cc79a7 44% 55%,#0072b2 55% 66%,#f0e442 66% 77%,#1b5e20 77% 88%,#332288 88% 100%)}
-.chart-metric{display:flex;align-items:baseline;gap:12px;padding:12px 0;color:#555}
-.chart-metric strong{color:#1b5e20;font-size:2.6em;line-height:1}
-.chart-legend{display:flex;flex-direction:column;gap:8px;font-size:0.87em}
 .chart-legend-row{display:flex;align-items:center;gap:8px;color:#444;font-size:0.88em}
 .chart-swatch{width:12px;height:12px;border-radius:3px;flex-shrink:0}
 .charts-grid .scale-1{--chart-scale:#56b4e9;--chart-ink:#12313f}
@@ -112,16 +104,9 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .investment-value{font-size:0.7em;color:#555}
 .investment-missing{grid-column:2/4;color:#777;font-size:0.7em;font-style:italic}
 .investment-axis{margin:4px 72px 0 29px}
-/* Grafici */
 /* Griglia responsiva: auto-fit crea le colonne che entrano, con larghezza minima di 280px. */
 .charts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:24px}
 .coming-soon-card{background:#f9f9f9;border:2px dashed #ccc;border-radius:12px;padding:24px 30px;color:#aaa;font-style:italic;text-align:center}
-.compare-bar-row{display:flex;align-items:center;gap:6px;font-size:0.8em}
-/* Barre comparative (confronto anni) */
-/* Righe affiancano l'anno alla barra; la stessa struttura consente confronti visivi coerenti. */
-.compare-bars{display:flex;flex-direction:column;gap:3px}
-.compare-row{margin-bottom:14px}
-.compare-year{width:30px;color:#888;flex-shrink:0;font-size:0.9em}
 /* ----- Contatti (contatti.html) ----- */
 .contact-card{background:white;border-radius:12px;padding:26px;box-shadow:0 4px 10px rgba(0,0,0,0.1);border-top:4px solid #2e7d32}
 .contact-card a{color:#2e7d32;font-weight:bold;text-decoration:none}
@@ -169,11 +154,6 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .estimate-box{display:flex;flex-direction:column;align-items:stretch;min-width:0;background:white;border-radius:10px;padding:22px;box-shadow:0 3px 8px rgba(0,0,0,0.08);border-top:4px solid #66bb6a;text-align:left}
 .estimate-box .est-label{font-size:0.82em;text-transform:none;letter-spacing:0;color:#333;font-weight:700;line-height:1.4;margin:0 0 14px}
 .estimate-box .est-note{font-size:0.92em;color:#444;line-height:1.55;margin:0}
-.estimate-box .est-value{font-size:clamp(1.45em,2.2vw,1.9em);font-weight:bold;color:#1b5e20;line-height:1.25;margin:0 0 12px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
-.estimate-box .trend-up,.estimate-box .trend-down,.estimate-box .trend-stable{display:inline-flex;align-items:center;align-self:flex-start;margin-top:14px;padding:5px 9px;border-radius:999px;background:#f1f5f1;font-size:0.78em;line-height:1.3}
-.estimate-box .trend-up{color:#1b5e20;background:#e8f5e9}
-.estimate-box .trend-down{color:#9b2c2c;background:#fceeee}
-.estimate-box .trend-stable{color:#775b08;background:#fff7dd}
 .estimate-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
 .estimate-values>div,.estimate-scenarios>div{display:flex;flex-direction:column;gap:4px;min-width:0;padding:10px 12px;border-radius:8px;background:#f5f8f5}
 .estimate-values span,.estimate-baseline span,.estimate-scenarios span{font-size:0.76em;color:#666}
@@ -212,11 +192,9 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .status-scenario{background:#fff5d8;color:#775b08}
 .status-data{background:#eef1f3;color:#4d5961}
 .estimate-disclaimer{font-size:0.88em;color:#777;font-style:italic;margin-top:18px;padding:10px 14px;background:#fff9e6;border-left:4px solid #ffd54f;border-radius:4px}
-/* Stime */
 /* ----- Stime / proiezioni ----- */
 /* ----- Sezione stime (kpi.html) ----- */
 .estimate-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:14px}
-/* ----- Immagine banner ----- */
 /* ----- Footer ----- */
 .footer{background-color:#1b5e20;color:white;text-align:center;padding:20px}
 .green{background-color:#e8f5e9}
@@ -226,7 +204,11 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .gri-table th{background-color:#2e7d32;color:white;padding:12px 16px;text-align:left}
 .gri-table tr:hover td{background-color:#f4faf4}
 .gri-table tr:last-child td{border-bottom:none}
-/* ----- Header ----- */
+/* ----- Header e hero delle pagine -----
+   Le classi corrispondono a header/nav e section.hero-img del markup.
+   L'immagine del hero copre il contenitore; titolo e testo restano sopra
+   l'immagine grazie al posizionamento e all'ombra del testo.
+*/
 .header{background-color:#1b5e20;color:white;text-align:center;padding:20px 25px}
 .header-inner{display:flex;align-items:center;justify-content:center;position:relative}
 /* ----- Hero generico (report.html) ----- */
@@ -249,7 +231,11 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .intro-text{padding:50px 8% 50px 12%;background:white}
 .intro-text h2{color:#1b5e20;margin-top:0}
 .intro-text p{color:#444;line-height:1.75}
-/* ----- KPI boxes ----- */
+/* ----- KPI sintetici e tabelle -----
+   .kpi-container dispone i riquadri in griglia; .kpi-box ne definisce l'aspetto.
+   Le tabelle mantengono la struttura semantica th/td dell'HTML; nelle pagine KPI
+   .table-scroll fornisce il contenitore che può scorrere in orizzontale su mobile.
+*/
 /* Cards */
 /* KPI */
 .kpi-box{background-color:white;border-left:6px solid #2e7d32;padding:20px;border-radius:10px;text-align:center;box-shadow:0 3px 8px rgba(0,0,0,0.1)}
@@ -266,17 +252,12 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .kpi-page .chart-card,.kpi-page .estimate-box,.kpi-page .kpi-box{transition:transform 0.25s ease,box-shadow 0.25s ease}
 .kpi-page .chart-card h3{transition:color 0.25s ease,border-color 0.25s ease}
 .kpi-page .esg-badge{transition:transform 0.25s ease,box-shadow 0.25s ease}
-.kpi-page .kpi-box h3,.kpi-page .estimate-box .est-value{transform-origin:center;transition:transform 0.25s ease,color 0.25s ease}
-.kpi-page .bar-fill{transition:filter 0.25s ease}
+.kpi-page .kpi-box h3{transform-origin:center;transition:transform 0.25s ease,color 0.25s ease}
 .kpi-page .kpi-table tbody tr td{transition:background-color 0.2s ease}
 .kpi-page .chart-card:hover,.kpi-page .chart-card:focus-within,.kpi-page .estimate-box:hover,.kpi-page .estimate-box:focus-within,.kpi-page .kpi-box:hover,.kpi-page .kpi-box:focus-within{transform:translateY(-4px);box-shadow:0 10px 20px rgba(0,0,0,0.14)}
 .kpi-page .chart-card:hover h3,.kpi-page .chart-card:focus-within h3{color:#2e7d32;border-color:#a5d6a7}
 .kpi-page .esg-heading:hover .esg-badge,.kpi-page .esg-heading:focus-within .esg-badge{transform:scale(1.08);box-shadow:0 3px 8px rgba(27,94,32,0.25)}
-.kpi-page .kpi-box:hover h3,.kpi-page .kpi-box:focus-within h3,.kpi-page .estimate-box:hover .est-value,.kpi-page .estimate-box:focus-within .est-value{transform:scale(1.04);color:#2e7d32}
-.kpi-page .bar-fill:hover{filter:brightness(1.1)}
-.leg-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
-/* Legenda grafici */
-.leg-row{display:flex;align-items:center;gap:8px;color:#444}
+.kpi-page .kpi-box:hover h3,.kpi-page .kpi-box:focus-within h3{transform:scale(1.04);color:#2e7d32}
 .limit-box{background:#fff8e1;border-left:5px solid #f9a825;padding:16px 20px;border-radius:8px;margin-bottom:16px;font-size:0.93em;color:#555}
 .limit-box strong{color:#e65100}
 .link-list{list-style:none;padding:0;margin:16px 0 0}
@@ -356,15 +337,19 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .temi-header{padding:36px 12% 18px;background:white}
 .temi-header h2{color:#1b5e20;margin:0}
 .temi-section{border-top:1px solid #dde8dd;border-bottom:1px solid #dde8dd}
-/* ----- Trend badge (kpi.html) ----- */
-.trend-down{color:#ef9a9a;font-size:0.9em;font-weight:bold}
-.trend-stable{color:#c59211;font-size:0.9em;font-weight:bold}
-.trend-up{color:#66bb6a;font-size:0.9em;font-weight:bold}
 .val{font-weight:bold;color:#1b5e20}
 .performance-table td.val{font-weight:normal}
 /* 900px – griglia temi a 2 colonne */
 /* =========================================================
    RESPONSIVE
+
+   Le regole qui sotto si sommano alle regole base solo quando la viewport
+   soddisfa la rispettiva soglia. A 900px si semplificano i layout intermedi;
+   fino a 640px il diagramma stakeholder diventa una colonna; fino a 768px
+   si applicano gli adattamenti generali mobile (incluso menu hamburger e
+   grafici a colonna singola). Poiché i blocchi si sovrappongono, a 640px e
+   meno sono attivi sia quello da 640px sia quello da 768px: in caso di
+   conflitto prevale la dichiarazione successiva a parità di specificità.
    ========================================================= */
 @media (max-width:900px){
 .temi-grid{grid-template-columns:1fr 1fr}
@@ -379,20 +364,18 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .stakeholder-branch li{font-size:0.78em}
 }
 /* 768px – mobile general */
+/* Layout e navigazione mobile: il JS aggiunge .open al nav al click e
+   aria-expanded riflette lo stesso stato; senza .open il menu resta chiuso. */
 @media screen and (max-width:768px){
 .estimate-grid{grid-template-columns:1fr;gap:14px}
 .estimate-group-title{margin-top:24px}
 .estimate-box{padding:20px}
-.estimate-box .est-value{font-size:1.55em}
 .estimate-growth-card{padding:18px}
 .estimate-growth-heading{flex-direction:column;gap:8px}
 .estimate-growth-layout{gap:12px;margin-top:14px}
 .estimate-growth-scenario,.estimate-growth-levers{padding:13px}
 .estimate-growth-values>div{padding:8px 6px}
 .estimate-growth-values strong{font-size:0.88em}
-.bar-row{align-items:stretch;flex-direction:column;gap:4px}
-.bar-name{min-width:0;font-size:0.8em;text-align:left}
-.bar-track{flex:none;width:100%}
 .cards{flex-direction:column}
 .cert-strip{gap:16px;padding:28px 6%}
 .charts-grid{grid-template-columns:1fr}
@@ -421,8 +404,9 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .temi-grid{grid-template-columns:1fr}
 .temi-header{padding:28px 6% 14px}
 }
+/* Rispetta l'impostazione di sistema "riduci movimento": conserva colori e
+   contenuti, ma elimina transizioni, trasformazioni e filtri animati dei KPI. */
 @media (prefers-reduced-motion:reduce){
-.donut,.kpi-page .chart-card,.kpi-page .chart-card h3,.kpi-page .estimate-box,.kpi-page .kpi-box,.kpi-page .esg-badge,.kpi-page .kpi-box h3,.kpi-page .estimate-box .est-value,.kpi-page .bar-fill,.kpi-page .kpi-table tbody tr td{transition:none}
-.donut:hover,.kpi-page .chart-card:hover,.kpi-page .chart-card:focus-within,.kpi-page .estimate-box:hover,.kpi-page .estimate-box:focus-within,.kpi-page .kpi-box:hover,.kpi-page .kpi-box:focus-within,.kpi-page .esg-heading:hover .esg-badge,.kpi-page .esg-heading:focus-within .esg-badge,.kpi-page .kpi-box:hover h3,.kpi-page .kpi-box:focus-within h3,.kpi-page .estimate-box:hover .est-value,.kpi-page .estimate-box:focus-within .est-value{transform:none;filter:none}
-.kpi-page .bar-fill:hover{filter:none}
+.donut,.kpi-page .chart-card,.kpi-page .chart-card h3,.kpi-page .estimate-box,.kpi-page .kpi-box,.kpi-page .esg-badge,.kpi-page .kpi-box h3,.kpi-page .kpi-table tbody tr td{transition:none}
+.donut:hover,.kpi-page .chart-card:hover,.kpi-page .chart-card:focus-within,.kpi-page .estimate-box:hover,.kpi-page .estimate-box:focus-within,.kpi-page .kpi-box:hover,.kpi-page .kpi-box:focus-within,.kpi-page .esg-heading:hover .esg-badge,.kpi-page .esg-heading:focus-within .esg-badge,.kpi-page .kpi-box:hover h3,.kpi-page .kpi-box:focus-within h3{transform:none;filter:none}
 }
