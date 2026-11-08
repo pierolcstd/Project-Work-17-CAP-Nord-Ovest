@@ -1,0 +1,384 @@
+<mxfile host="65bd71144e">
+    <diagram id="pagina-home" name="01 - Home">
+        <mxGraphModel dx="2493" dy="1686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1350" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="h-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER&#xa;Brand: Consorzi Agrari d&#39;Italia / Focus CAP Nord Ovest · pulsante menu mobile" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=11;align=center;verticalAlign=middle;" value="NAVIGAZIONE · Home | Chi siamo | Sostenibilità | Agricoltura 4.0 | KPI ESG | Report | Metodologia | Contatti" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/cap-home.webp&#xa;Sostenibilità d&#39;impresa nel settore agroalimentare&#xa;Descrizione del progetto e del Bilancio 2024" vertex="1">
+                    <mxGeometry height="175" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-intro" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=left;verticalAlign=middle;spacing=15;" value="INTRODUZIONE · CAP Nord Ovest&#xa;Profilo del consorzio e testo descrittivo" vertex="1">
+                    <mxGeometry height="145" width="500" x="70" y="345" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-metrics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="DATI IN EVIDENZA · griglia KPI sintetici&#xa;264,8 M€ valore generato · ~3.000 soci · 107 dipendenti&#xa;60 punti vendita · 200.000 t cereali · 200+ mezzi" vertex="1">
+                    <mxGeometry height="145" width="340" x="590" y="345" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-topics-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#1b5e20;fontSize=18;fontStyle=1;" value="I TEMI TRATTATI" vertex="1">
+                    <mxGeometry height="35" width="860" x="70" y="515" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-t1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="Sostenibilità&#xa;ambientale" vertex="1">
+                    <mxGeometry height="80" width="270" x="70" y="565" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-t2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="Persone e&#xa;dimensione sociale" vertex="1">
+                    <mxGeometry height="80" width="270" x="365" y="565" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-t3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="Governance e&#xa;integrità" vertex="1">
+                    <mxGeometry height="80" width="270" x="660" y="565" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-t4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="Agricoltura 4.0" vertex="1">
+                    <mxGeometry height="80" width="270" x="70" y="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-t5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="KPI ESG" vertex="1">
+                    <mxGeometry height="80" width="270" x="365" y="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-t6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="Report di&#xa;Sostenibilità" vertex="1">
+                    <mxGeometry height="80" width="270" x="660" y="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-photo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a5b99d;strokeColor=#a5b99d;fontColor=#ffffff;fontSize=14;align=center;verticalAlign=middle;" value="IMMAGINE SECONDARIA · img/sostenibilita.webp (caricamento differito)" vertex="1">
+                    <mxGeometry height="75" width="860" x="70" y="765" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-cert" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#275d38;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" value="FASCIA CERTIFICAZIONI · ISO 22005:2008 · ISO 45001 · UNI/PdR 125:2022 · Rating di legalità" vertex="1">
+                    <mxGeometry height="75" width="860" x="70" y="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-context-title" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#1b5e20;fontSize=18;fontStyle=1;" value="IL CONTESTO DEL PROGETTO" vertex="1">
+                    <mxGeometry height="35" width="860" x="70" y="960" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-context" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=center;verticalAlign=middle;" value="4 RIQUADRI IN GRIGLIA&#xa;Fonte principale · Standard GRI&#xa;Ambito territoriale · Nota metodologica" vertex="1">
+                    <mxGeometry height="105" width="860" x="70" y="1010" as="geometry"/>
+                </mxCell>
+                <mxCell id="h-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="1160" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="pagina-azienda" name="02 - Chi siamo">
+        <mxGraphModel dx="1342" dy="908" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="950" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="az-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER · brand CAI / CAP Nord Ovest · pulsante menu mobile" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=12;align=center;verticalAlign=middle;" value="NAVIGAZIONE · 8 collegamenti alle sezioni del sito" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/filiera.webp&#xa;Chi siamo · CAP Nord Ovest nel sistema Consorzi Agrari d&#39;Italia" vertex="1">
+                    <mxGeometry height="165" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-consorzio" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=15;align=left;verticalAlign=middle;spacing=22;" value="SEZIONE TESTUALE · Il Consorzio&#xa;Presentazione, attività, rete di vendita e supporto agli agricoltori" vertex="1">
+                    <mxGeometry height="125" width="860" x="70" y="335" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-mission-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" value="LA NOSTRA MISSIONE · tre card affiancate" vertex="1">
+                    <mxGeometry height="48" width="860" x="70" y="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Supporto agli agricoltori&#xa;Assistenza e consulenza tecnica" vertex="1">
+                    <mxGeometry height="100" width="270" x="70" y="558" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Filiera agricola&#xa;Ritiro e valorizzazione dei cereali" vertex="1">
+                    <mxGeometry height="100" width="270" x="365" y="558" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Innovazione&#xa;Tecnologie e pratiche sostenibili" vertex="1">
+                    <mxGeometry height="100" width="270" x="660" y="558" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-cai" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=15;align=left;verticalAlign=middle;spacing=22;" value="SEZIONE TESTUALE · Il sistema CAI&#xa;Gruppo cooperativo, ruolo dei consorzi e modello a sostegno dei soci" vertex="1">
+                    <mxGeometry height="115" width="860" x="70" y="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="az-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="855" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="pagina-sostenibilita" name="03 - Sostenibilita">
+        <mxGraphModel dx="1586" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1250" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="s-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER · brand CAI / CAP Nord Ovest · menu responsive" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=12;align=center;verticalAlign=middle;" value="NAVIGAZIONE · 8 collegamenti alle sezioni del sito" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/sostenibilita.webp&#xa;Sostenibilità d&#39;impresa · Ambiente, Persone e Governance" vertex="1">
+                    <mxGeometry height="165" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-approach" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=left;verticalAlign=middle;spacing=20;" value="IL NOSTRO APPROCCIO ESG · testo introduttivo ai tre pilastri e all&#39;impegno prospettico" vertex="1">
+                    <mxGeometry height="85" width="860" x="70" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-env-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="DIMENSIONE AMBIENTALE · sezione verde · tre card" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="445" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-e1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Prodotti sostenibili&#xa;Biostimolanti" vertex="1">
+                    <mxGeometry height="94" width="270" x="70" y="505" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-e2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Uso responsabile dell&#39;acqua&#xa;Irrigazione localizzata" vertex="1">
+                    <mxGeometry height="94" width="270" x="365" y="505" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-e3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Riduzione degli sprechi&#xa;Precisione e protezione raccolti" vertex="1">
+                    <mxGeometry height="94" width="270" x="660" y="505" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-soc-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#f48fb1;fontColor=#880e4f;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="DIMENSIONE SOCIALE · tre card" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e7c6d0;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Benessere dei lavoratori&#xa;Formazione, sicurezza e welfare" vertex="1">
+                    <mxGeometry height="94" width="270" x="70" y="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-s2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e7c6d0;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Supporto agli agricoltori&#xa;Servizi e input produttivi" vertex="1">
+                    <mxGeometry height="94" width="270" x="365" y="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-s3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e7c6d0;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Comunità rurali&#xa;Territorio e iniziative locali" vertex="1">
+                    <mxGeometry height="94" width="270" x="660" y="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-gov-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="DIMENSIONE DI GOVERNANCE · sezione verde · tre card" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="815" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-g1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Codice Etico&#xa;Principi e stakeholder" vertex="1">
+                    <mxGeometry height="94" width="270" x="70" y="875" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-g2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Modello 231&#xa;Organizzazione e gestione dei rischi" vertex="1">
+                    <mxGeometry height="94" width="270" x="365" y="875" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-g3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Whistleblowing&#xa;Segnalazioni e conformità" vertex="1">
+                    <mxGeometry height="94" width="270" x="660" y="875" as="geometry"/>
+                </mxCell>
+                <mxCell id="s-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="1020" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="pagina-agricoltura" name="04 - Agricoltura 4.0">
+        <mxGraphModel dx="1586" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1180" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ag-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER · brand CAI / CAP Nord Ovest · menu responsive" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=12;align=center;verticalAlign=middle;" value="NAVIGAZIONE · 8 collegamenti alle sezioni del sito" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/agricoltura.webp&#xa;Agricoltura 4.0 · Tecnologia e innovazione per l&#39;agricoltura sostenibile" vertex="1">
+                    <mxGeometry height="165" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-intro" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=left;verticalAlign=middle;spacing=20;" value="LA TRANSIZIONE DIGITALE IN AGRICOLTURA&#xa;Due paragrafi introduttivi su tecnologie, consulenza e supporto agli agricoltori" vertex="1">
+                    <mxGeometry height="100" width="860" x="70" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-tech-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="LE NOSTRE SOLUZIONI TECNOLOGICHE · griglia di 6 riquadri" vertex="1">
+                    <mxGeometry height="45" width="860" x="70" y="455" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-t1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Agricoltura di precisione&#xa;Sentinel · Cropwise-Farmshots" vertex="1">
+                    <mxGeometry height="92" width="270" x="70" y="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-t2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Analisi dei dati&#xa;Agrigenius e fonti informative" vertex="1">
+                    <mxGeometry height="92" width="270" x="365" y="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-t3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Sensoristica e difesa&#xa;Sensori, meteo e allerte" vertex="1">
+                    <mxGeometry height="92" width="270" x="660" y="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-t4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Irrigazione e fertirrigazione" vertex="1">
+                    <mxGeometry height="92" width="270" x="70" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-t5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Protezione da grandine e gelate" vertex="1">
+                    <mxGeometry height="92" width="270" x="365" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-t6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Prodotti biostimolanti&#xa;Batteri endofitici descritti nel report" vertex="1">
+                    <mxGeometry height="92" width="270" x="660" y="630" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-benefit-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="BENEFICI PER GLI AGRICOLTORI · 4 box KPI descrittivi" vertex="1">
+                    <mxGeometry height="45" width="860" x="70" y="765" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="Acqua" vertex="1">
+                    <mxGeometry height="82" width="195" x="70" y="830" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="Input agricoli" vertex="1">
+                    <mxGeometry height="82" width="195" x="287" y="830" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="Raccolto" vertex="1">
+                    <mxGeometry height="82" width="195" x="505" y="830" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-b4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#1b5e20;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="Colture" vertex="1">
+                    <mxGeometry height="82" width="208" x="722" y="830" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-note" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6d4c41;fontSize=12;fontStyle=2;" value="NOTA FONTE · Benefici qualitativi; il report non quantifica risparmi o aumenti di resa attribuibili alle tecnologie" vertex="1">
+                    <mxGeometry height="45" width="820" x="90" y="930" as="geometry"/>
+                </mxCell>
+                <mxCell id="ag-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="1000" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="pagina-kpi" name="05 - KPI ESG">
+        <mxGraphModel dx="1702" dy="1151" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="k-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER · brand CAI / CAP Nord Ovest · menu responsive" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=12;align=center;verticalAlign=middle;" value="NAVIGAZIONE · 8 collegamenti alle sezioni del sito" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/cap-kpi.webp&#xa;KPI ESG · esercizio 2023" vertex="1">
+                    <mxGeometry height="140" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-overview" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="PANORAMICA GENERALE · 4 box KPI&#xa;264,8 M€ valore economico · 107 dipendenti · 3.000 soci · 4 certificazioni" vertex="1">
+                    <mxGeometry height="90" width="860" x="70" y="305" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-charts-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="GRAFICI ESG · 12 visualizzazioni statiche, tre per dimensione" vertex="1">
+                    <mxGeometry height="48" width="860" x="70" y="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-env" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=13;align=center;verticalAlign=middle;" value="AMBIENTE · 3 schede&#xa;Consumi energetici · Tipologie principali di rifiuti · Composizione dei rifiuti" vertex="1">
+                    <mxGeometry height="100" width="410" x="70" y="485" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-social" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4ec;strokeColor=#f48fb1;fontColor=#880e4f;fontSize=13;align=center;verticalAlign=middle;" value="SOCIALE · 3 schede&#xa;Composizione di genere · Fasce d&#39;età · Ore medie di formazione" vertex="1">
+                    <mxGeometry height="100" width="410" x="520" y="485" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-gov" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#b39ddb;fontColor=#4527a0;fontSize=13;align=center;verticalAlign=middle;" value="GOVERNANCE · 3 schede&#xa;Organi aziendali · Stakeholder · Whistleblowing" vertex="1">
+                    <mxGeometry height="100" width="410" x="70" y="605" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-economy" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ffb74d;fontColor=#6d4c41;fontSize=13;align=center;verticalAlign=middle;" value="ECONOMIA · 3 schede&#xa;Valore generato · Valore distribuito · Investimenti per anno" vertex="1">
+                    <mxGeometry height="100" width="410" x="520" y="605" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-tables" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f4f7f2;strokeColor=#b0bec5;fontColor=#37474f;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="TABELLE DI DETTAGLIO · valori fonte, confronti e note&#xa;Performance economica · Dimensione ambientale · Persone e dimensione sociale · Governance e integrità&#xa;Tabelle semantiche con contenuti scorrevoli su schermi stretti" vertex="1">
+                    <mxGeometry height="155" width="860" x="70" y="735" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-estimates" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#ffd54f;fontColor=#6d4c41;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="STIME E PROIEZIONI 2024-2025&#xa;Scenario illustrativo · Estrapolazioni 2022-2023 · Scenari e dati non proiettabili&#xa;Ipotesi e limiti esplicitati; non sono previsioni ufficiali né obiettivi aziendali" vertex="1">
+                    <mxGeometry height="140" width="860" x="70" y="920" as="geometry"/>
+                </mxCell>
+                <mxCell id="k-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="1090" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="pagina-report" name="06 - Report">
+        <mxGraphModel dx="1424" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="r-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER · brand CAI / CAP Nord Ovest · menu responsive" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=12;align=center;verticalAlign=middle;" value="NAVIGAZIONE · 8 collegamenti alle sezioni del sito" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/report.webp&#xa;Report di Sostenibilità · Bilanci CAP Nord Ovest" vertex="1">
+                    <mxGeometry height="155" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-intro" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=left;verticalAlign=middle;spacing=18;" value="SEZIONE · Seleziona il report&#xa;Testo informativo sulla consultazione e il download" vertex="1">
+                    <mxGeometry height="85" width="860" x="70" y="325" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-select" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#64b5f6;fontColor=#0d47a1;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="CONTROLLO INTERATTIVO · Selettore per anno di pubblicazione: 2024 / 2025" vertex="1">
+                    <mxGeometry height="65" width="680" x="160" y="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-2024" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="PANNELLO 2024 · attivo inizialmente&#xa;Scheda report · pubblicato nel 2024 · esercizio 2023 · GRI&#xa;Pulsante per scaricare report/bilancio-sostenibilita-cap-24.pdf" vertex="1">
+                    <mxGeometry height="125" width="760" x="120" y="535" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-2025" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#ffd54f;fontColor=#6d4c41;fontSize=14;align=center;verticalAlign=middle;" value="PANNELLO 2025 · selezionabile&#xa;Avviso: report non ancora disponibile, nessun download" vertex="1">
+                    <mxGeometry height="90" width="760" x="120" y="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-archive" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f4f7f2;strokeColor=#c8d6c6;fontColor=#555555;fontSize=13;align=center;verticalAlign=middle;" value="NOTA ARCHIVIO · aggiornamento annuale della raccolta dei report" vertex="1">
+                    <mxGeometry height="55" width="760" x="120" y="810" as="geometry"/>
+                </mxCell>
+                <mxCell id="r-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="900" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="pagina-metodologia" name="07 - Metodologia">
+        <mxGraphModel dx="1790" dy="1210" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1450" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="m-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER · brand CAI / CAP Nord Ovest · menu responsive" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=12;align=center;verticalAlign=middle;" value="NAVIGAZIONE · 8 collegamenti alle sezioni del sito" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/cap-metodologia.webp&#xa;Metodologia · Come è stato costruito il Project Work" vertex="1">
+                    <mxGeometry height="155" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-goals" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="OBIETTIVI DEL PROGETTO · testo descrittivo&#xa;4 box di sintesi: 8 sezioni · GRI · dati documentali · HTML/CSS" vertex="1">
+                    <mxGeometry height="110" width="860" x="70" y="325" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-steps-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="FASI DI LAVORO · 5 passaggi in sequenza" vertex="1">
+                    <mxGeometry height="45" width="860" x="70" y="465" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-steps" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=left;verticalAlign=middle;spacing=18;" value="1. Analisi documentale&#xa;2. Strutturazione dei contenuti&#xa;3. Sviluppo web&#xa;4. Elaborazione stime e proiezioni&#xa;5. Verifica e revisione" vertex="1">
+                    <mxGeometry height="150" width="860" x="70" y="525" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-sources-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f4f7f2;strokeColor=#b0bec5;fontColor=#37474f;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="FONTI UTILIZZATE · 4 riquadri" vertex="1">
+                    <mxGeometry height="45" width="860" x="70" y="710" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-sources" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="Bilancio di Sostenibilità 2024&#xa;Sito ufficiale Consorzi Agrari d&#39;Italia&#xa;Standard GRI&#xa;Direttiva CSRD (contesto)" vertex="1">
+                    <mxGeometry height="120" width="860" x="70" y="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-gri" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="INDICATORI GRI UTILIZZATI · tabella con codice, titolo e sezione del sito" vertex="1">
+                    <mxGeometry height="90" width="860" x="70" y="925" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-limits" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#ffd54f;fontColor=#6d4c41;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" value="LIMITI E NOTE METODOLOGICHE · sezione conclusiva" vertex="1">
+                    <mxGeometry height="75" width="860" x="70" y="1050" as="geometry"/>
+                </mxCell>
+                <mxCell id="m-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="1160" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="pagina-contatti" name="08 - Contatti">
+        <mxGraphModel dx="1586" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1250" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ct-header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;spacingLeft=20;" value="HEADER · brand CAI / CAP Nord Ovest · menu responsive" vertex="1">
+                    <mxGeometry height="65" width="860" x="70" y="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-nav" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#275d38;strokeColor=#ffffff;fontColor=#ffffff;fontSize=12;align=center;verticalAlign=middle;" value="NAVIGAZIONE · 8 collegamenti alle sezioni del sito" vertex="1">
+                    <mxGeometry height="42" width="860" x="70" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-hero" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#78936f;strokeColor=#78936f;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="HERO · img/cap-contatti.webp&#xa;Contatti · Riferimenti e informazioni sul progetto" vertex="1">
+                    <mxGeometry height="155" width="860" x="70" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-ref-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="RIFERIMENTI CAP NORD OVEST · griglia 2×2 di schede" vertex="1">
+                    <mxGeometry height="45" width="860" x="70" y="325" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Sede legale&#xa;Identità e sedi operative" vertex="1">
+                    <mxGeometry height="90" width="410" x="70" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Rete territoriale&#xa;Punti vendita e personale per regione" vertex="1">
+                    <mxGeometry height="90" width="410" x="520" y="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Sistema CAI&#xa;Appartenenza e informazioni istituzionali" vertex="1">
+                    <mxGeometry height="90" width="410" x="70" y="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-c4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=13;align=center;verticalAlign=middle;" value="Trasparenza e report&#xa;Link alla sezione Report" vertex="1">
+                    <mxGeometry height="90" width="410" x="520" y="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-disclaimer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#ffd54f;fontColor=#6d4c41;fontSize=13;align=center;verticalAlign=middle;" value="DISCLAIMER · Sito didattico; i dati derivano dal Bilancio 2024 e non costituiscono comunicazione ufficiale aziendale" vertex="1">
+                    <mxGeometry height="75" width="860" x="70" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-project" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#81c784;fontColor=#1b5e20;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="INFORMAZIONI SUL PROGETTO · scheda descrittiva&#xa;Tabella del corso, elaborato, caso studio, fonte, standard GRI, tecnologie e link alla Metodologia" vertex="1">
+                    <mxGeometry height="120" width="860" x="70" y="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-links" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c8d6c6;fontColor=#333333;fontSize=14;align=left;verticalAlign=middle;spacing=20;" value="LINK UTILI · elenco puntato&#xa;Report di sostenibilità · KPI ESG · Agricoltura 4.0 · Metodologia · GRI Standards" vertex="1">
+                    <mxGeometry height="100" width="860" x="70" y="885" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct-footer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1b5e20;strokeColor=#1b5e20;fontColor=#ffffff;fontSize=13;align=center;verticalAlign=middle;" value="FOOTER · Project Work - Tecnologia Web per la Sostenibilità d&#39;Impresa" vertex="1">
+                    <mxGeometry height="52" width="860" x="70" y="1020" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
