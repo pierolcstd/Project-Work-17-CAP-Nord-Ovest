@@ -212,14 +212,20 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;background-color:#f4f7f2;co
 .header{background-color:#1b5e20;color:white;text-align:center;padding:20px 25px}
 .header-inner{display:flex;align-items:center;justify-content:center;position:relative}
 /* ----- Hero generico (report.html) ----- */
-.hero-img{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;box-sizing:border-box;height:320px;background-color:#66bb6a;color:white;text-align:center;padding:30px 20px;overflow:hidden}
+.hero-img{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;box-sizing:border-box;height:320px;background-color:#3f4540;color:white;text-align:center;padding:30px 20px;overflow:hidden}
 /* Hero con immagine */
 .hero-img h2{font-size:34px;margin:0 0 12px}
 .hero-img h2,.hero-img p{position:relative}
 /* ----- Hero con immagine di sfondo (tutte le pagine interne) ----- */
-.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.55)}
+.hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.55);view-transition-name:hero-image}
 .hero-img h2,.hero-img p{text-shadow:0 2px 4px rgba(0,0,0,0.8)}
 .hero-img p{margin:0;font-size:1.05em}
+@view-transition{navigation:auto}
+::view-transition-old(root),::view-transition-new(root){animation-duration:180ms}
+::view-transition-old(hero-image),::view-transition-new(hero-image){animation-duration:350ms;animation-timing-function:ease-in-out}
+@media (prefers-reduced-motion:reduce){
+::view-transition-old(root),::view-transition-new(root),::view-transition-old(hero-image),::view-transition-new(hero-image){animation-duration:1ms}
+}
 .highlight-row td{background-color:#f1f8e9}
 .intro-numbers{background-color:#e8f5e9;padding:50px 8%;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-content:center}
 /* ----- Hero home (index.html) ----- */
